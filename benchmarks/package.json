@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "benchmark-speed",
+  "license": "MIT",
+  "version": "0.0.0",
+  "main": "benchmark.js",
+  "scripts": {
+    "advanced": "node --icu-data-dir=./node_modules/full-icu -r esm ./advanced.js",
+    "basic": "node -r esm ./basic.js",
+    "bundle": "node -r esm ./bundle.js"
+  },
+  "dependencies": {
+    "date-fns": "^1.29.0",
+    "dateformat": "^3.0.3",
+    "dayjs": "^1.5.15",
+    "fecha": "^2.3.3",
+    "luxon": "^1.2.0",
+    "moment": "^2.22.1",
+    "time-stamp": "^2.0.0"
+  },
+  "devDependencies": {
+    "beautify-benchmark": "^0.2.4",
+    "benchmark": "^2.1.4",
+    "esm": "^3.0.27",
+    "full-icu": "^1.2.1",
+    "microtime": "^2.1.7",
+    "resolve": "^1.7.1",
+    "rollup": "^0.58.2",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify-es": "^0.0.1"
+  },
+  "esm": {
+    "cjs": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "fdate",
+  "description": "Light-weight, faster datetime formatter for modern browsers",
+  "license": "MIT",
+  "author": "3846masa <3846masahiro+git@gmail.com>",
+  "version": "0.0.0",
+  "main": "lib/index",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "build": "npm-run-all -s clean build:tsc build:rename build:rollup",
+    "build:rename": "renamer --find \".js\" --replace \".mjs\" \"./lib/**.js\"",
+    "build:rollup": "rollup -c",
+    "build:tsc": "tsc",
+    "clean": "rimraf lib dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2",
+    "renamer": "^0.6.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.58.2",
+    "rollup-plugin-gzip": "^1.3.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify-es": "^0.0.1",
+    "typescript": "^2.8.3"
+  },
+  "keywords": [
+    "date",
+    "datetime",
+    "format",
+    "formatter"
+  ],
+  "jsdelivr": "dist/index.min.js",
+  "module": "lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "unpkg": "dist/index.min.js"
+}
