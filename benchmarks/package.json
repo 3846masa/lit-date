@@ -10,13 +10,14 @@
     "bundle": "node -r esm ./bundle.js"
   },
   "dependencies": {
-    "date-fns": "^1.29.0",
-    "dateformat": "^3.0.3",
-    "dayjs": "^1.5.15",
-    "fecha": "^2.3.3",
-    "luxon": "^1.2.0",
-    "moment": "^2.22.1",
-    "time-stamp": "^2.0.0"
+    "date-fns": "*",
+    "dateformat": "*",
+    "dayjs": "*",
+    "fdate": "*",
+    "fecha": "*",
+    "luxon": "*",
+    "moment": "*",
+    "time-stamp": "*"
   },
   "devDependencies": {
     "beautify-benchmark": "^0.2.4",
