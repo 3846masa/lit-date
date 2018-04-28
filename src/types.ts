@@ -64,5 +64,5 @@ export interface DateProxy {
   /** Time Zone */
   ZZ: string;
 }
-export type DateKeys = Exclude<keyof DateProxy, 'raw'>;
+export type DateKeys = keyof DateProxy;
 export type DateProxyFunction = (date: DateProxy) => any;
