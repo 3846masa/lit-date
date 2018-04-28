@@ -7,8 +7,8 @@
 `fdate` is ...
 
 - ⏰ **f**ormatter of **Date**
-- 👼 light-weight as a **f**eather (**~ 1kB** gzipped!)
-- 🦄 **~ x1.5** **f**aster than `moment`
+- 👼 light-weight as a **f**eather (**~1kB** gzipped!)
+- 🦄 **~x1.5** **f**aster than `moment`
 - 🆕 powered by `Proxy` and `Template literals`
 
 ## Table of Contents
