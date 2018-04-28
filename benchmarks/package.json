@@ -1,12 +1,10 @@
 {
   "private": true,
-  "name": "benchmark",
-  "license": "MIT",
-  "version": "0.0.0",
+  "name": "benchmarks",
   "scripts": {
-    "advanced": "node --icu-data-dir=./node_modules/full-icu -r esm ./advanced.js",
-    "basic": "node -r esm ./basic.js",
-    "bundle": "node -r esm ./bundle.js"
+    "benchmark:client": "karma start",
+    "benchmark:server": "node --icu-data-dir=./node_modules/full-icu -r esm scripts/benchmark-server.js",
+    "bundle": "node -r esm scripts/bundle.js"
   },
   "dependencies": {
     "date-fns": "*",
@@ -21,14 +19,20 @@
   "devDependencies": {
     "beautify-benchmark": "^0.2.4",
     "benchmark": "^2.1.4",
-    "esm": "^3.0.27",
+    "chalk": "^2.4.1",
+    "compression-webpack-plugin": "^1.1.11",
+    "esm": "^3.0.28",
+    "fs-extra": "^5.0.0",
     "full-icu": "^1.2.1",
-    "microtime": "^2.1.7",
-    "resolve": "^1.7.1",
-    "rollup": "^0.58.2",
-    "rollup-plugin-commonjs": "^9.1.0",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-uglify-es": "^0.0.1"
+    "globby": "^8.0.1",
+    "humanize": "^0.0.9",
+    "karma": "^2.0.2",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-webpack": "^3.0.0",
+    "webpack": "^4.6.0",
+    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-cli": "^2.0.15"
   },
   "esm": {
     "cjs": true
