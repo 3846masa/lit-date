@@ -3,6 +3,7 @@
   "description": "Light-weight, faster datetime formatter for modern browsers",
   "license": "MIT",
   "author": "3846masa <3846masahiro+git@gmail.com>",
+  "repository": "git@github.com:3846masa/fdate.git",
   "version": "0.0.1",
   "main": "lib/index",
   "files": [
