@@ -1,9 +1,8 @@
 {
   "private": true,
-  "name": "benchmark-speed",
+  "name": "benchmark",
   "license": "MIT",
   "version": "0.0.0",
-  "main": "benchmark.js",
   "scripts": {
     "advanced": "node --icu-data-dir=./node_modules/full-icu -r esm ./advanced.js",
     "basic": "node -r esm ./basic.js",
