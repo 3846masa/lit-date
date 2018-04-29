@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "3846masa <3846masahiro+git@gmail.com>",
   "repository": "git@github.com:3846masa/fdate.git",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/index",
   "files": [
     "dist",
