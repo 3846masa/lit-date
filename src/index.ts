@@ -1,5 +1,6 @@
 import { DateKeys, DateProxy, DateProxyFunction } from './types';
 import proxyFunctions, { proxyFunctionKeys } from './proxy-functions';
+import stringRaw from './string-raw';
 
 const wrap = (date: Date) => {
   const proxy: DateProxy = new Proxy({} as any, {
@@ -14,9 +15,9 @@ const wrap = (date: Date) => {
   return proxy;
 };
 
-const fdate = (strArr: TemplateStringsArray, ...argv: (DateKeys | DateProxyFunction)[]) => (date: Date) => {
+const fdate = (strArr: TemplateStringsArray, ...args: (DateKeys | DateProxyFunction)[]) => (date: Date) => {
   const proxy = wrap(date);
-  return String.raw(strArr, ...argv.map((args) => (typeof args === 'string' ? proxy[args] : args(proxy))));
+  return stringRaw(strArr, ...args.map((argv) => (typeof argv === 'string' ? proxy[argv] : argv(proxy))));
 };
 
 export default fdate;
