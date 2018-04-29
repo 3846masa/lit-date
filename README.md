@@ -134,9 +134,7 @@ See [benchmarks](./benchmarks) for more details.
 | **fdate**  | **168,387 ops/sec** | ±5.00% | (42 runs sampled) |
 | luxon      | 462 ops/sec         | ±3.17% | (42 runs sampled) |
 
-### Bundle size
-
-See [benchmarks/scripts](./benchmarks/scripts).
+### Bundle size (Webpack)
 
 |            | size        | gzipped       |
 | :--------- | ----------: | ------------: |
