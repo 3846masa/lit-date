@@ -16,6 +16,7 @@
     "build:rollup": "rollup -c",
     "build:tsc": "tsc",
     "clean": "rimraf lib dist",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
