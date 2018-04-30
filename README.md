@@ -48,11 +48,11 @@ const render = fdate`${'M'}月${'D'}日${dayOfWeekName}曜日`;
 console.log(render(new Date()));
 ```
 
-See [examples](./examples).
+See [examples](https://github.com/3846masa/fdate/tree/master/examples).
 
 ## Benchmark
 
-See [benchmarks](./benchmarks) for more details.
+See [benchmarks](https://github.com/3846masa/fdate/tree/master/benchmarks) for more details.
 
 ### Basic usage
 
@@ -153,4 +153,4 @@ PRs accepted.
 
 ## License
 
-[MIT (c) 3846masa](./LICENSE)
+[MIT (c) 3846masa](https://github.com/3846masa/fdate/blob/master/LICENSE)
