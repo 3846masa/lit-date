@@ -128,10 +128,10 @@ See [benchmarks](./benchmarks) for more details.
 |            | ops/sec             |        |                   |
 | :--------- | ------------------: | -----: | ----------------: |
 | fecha      | 754,953 ops/sec     | ±3.44% | (44 runs sampled) |
-| dateformat | 56,548 ops/sec      | ±2.56% | (45 runs sampled) |
 | moment     | 397,211 ops/sec     | ±3.44% | (46 runs sampled) |
 | date-fns   | 268,545 ops/sec     | ±5.27% | (43 runs sampled) |
 | **fdate**  | **168,387 ops/sec** | ±5.00% | (42 runs sampled) |
+| dateformat | 56,548 ops/sec      | ±2.56% | (45 runs sampled) |
 | luxon      | 462 ops/sec         | ±3.17% | (42 runs sampled) |
 
 ### Bundle size (Webpack)
@@ -142,8 +142,8 @@ See [benchmarks](./benchmarks) for more details.
 | **fdate**  | **2.05 KB** | **986 bytes** |
 | dateformat | 3.36 KB     | 1.66 KB       |
 | fecha      | 5.13 KB     | 2.06 KB       |
-| date-fns   | 8.93 KB     | 3.02 KB       |
 | dayjs      | 6.30 KB     | 2.26 KB       |
+| date-fns   | 8.93 KB     | 3.02 KB       |
 | luxon      | 50.86 KB    | 15.16 KB      |
 | moment     | 51.29 KB    | 16.63 KB      |
 
