@@ -7,9 +7,9 @@
 `fdate` is ...
 
 - ⏰ **f**ormatter of **Date**
-- 👼 light-weight (**~1kB** gzipped!)
-- 🦄 fast like other datetime libraries (under V8 engine)
-- 🆕 powered by `Proxy` and `Template literals`
+- 👼 light-weight as a **f**eather (**~1kB** gzipped!)
+- 🦄 very **f**aster than other datetime libraries (e.g. `moment`)
+- 🆕 powered by `Template literals`
 
 ## Table of Contents
 
@@ -62,40 +62,40 @@ See [benchmarks](./benchmarks) for more details.
 
 |            | ops/sec             |        |                   |
 | :--------- | ------------------: | -----: | ----------------: |
-| **fdate**  | **555,012 ops/sec** | ±1.46% | (91 runs sampled) |
-| time-stamp | 387,908 ops/sec     | ±1.45% | (85 runs sampled) |
-| moment     | 371,611 ops/sec     | ±1.73% | (84 runs sampled) |
-| date-fns   | 363,545 ops/sec     | ±2.03% | (85 runs sampled) |
-| dayjs      | 267,914 ops/sec     | ±1.49% | (82 runs sampled) |
-| fecha      | 188,312 ops/sec     | ±1.39% | (89 runs sampled) |
-| dateformat | 102,990 ops/sec     | ±3.18% | (83 runs sampled) |
-| luxon      | 2,300 ops/sec       | ±1.58% | (85 runs sampled) |
+| **fdate**  | **993,227 ops/sec** | ±0.97% | (87 runs sampled) |
+| time-stamp | 409,736 ops/sec     | ±2.20% | (88 runs sampled) |
+| date-fns   | 400,837 ops/sec     | ±1.21% | (88 runs sampled) |
+| moment     | 391,224 ops/sec     | ±1.61% | (87 runs sampled) |
+| dayjs      | 266,590 ops/sec     | ±1.84% | (83 runs sampled) |
+| fecha      | 193,034 ops/sec     | ±2.46% | (81 runs sampled) |
+| dateformat | 114,571 ops/sec     | ±1.58% | (86 runs sampled) |
+| luxon      | 2,506 ops/sec       | ±1.91% | (82 runs sampled) |
 
-#### Chrome 66.0.3359 (Windows 10 0.0.0)
-
-|            | ops/sec             |        |                   |
-| :--------- | ------------------: | -----: | ----------------: |
-| time-stamp | 599,766 ops/sec     | ±0.76% | (64 runs sampled) |
-| **fdate**  | **518,779 ops/sec** | ±1.19% | (61 runs sampled) |
-| moment     | 494,608 ops/sec     | ±0.71% | (63 runs sampled) |
-| fecha      | 487,890 ops/sec     | ±1.19% | (64 runs sampled) |
-| date-fns   | 474,755 ops/sec     | ±1.12% | (62 runs sampled) |
-| dayjs      | 271,477 ops/sec     | ±1.35% | (60 runs sampled) |
-| dateformat | 141,005 ops/sec     | ±1.15% | (61 runs sampled) |
-| luxon      | 2,433 ops/sec       | ±2.46% | (59 runs sampled) |
-
-#### Firefox 59.0.0 (Windows 10 0.0.0)
+#### Chrome 66.0.3359
 
 |            | ops/sec             |        |                   |
 | :--------- | ------------------: | -----: | ----------------: |
-| fecha      | 838,066 ops/sec     | ±3.73% | (45 runs sampled) |
-| time-stamp | 508,171 ops/sec     | ±2.72% | (46 runs sampled) |
-| date-fns   | 452,750 ops/sec     | ±2.90% | (47 runs sampled) |
-| moment     | 436,953 ops/sec     | ±1.96% | (48 runs sampled) |
-| dayjs      | 253,912 ops/sec     | ±2.91% | (47 runs sampled) |
-| **fdate**  | **190,718 ops/sec** | ±4.33% | (42 runs sampled) |
-| dateformat | 55,879 ops/sec      | ±2.32% | (49 runs sampled) |
-| luxon      | 2,609 ops/sec       | ±1.34% | (48 runs sampled) |
+| **fdate**  | **948,727 ops/sec** | ±1.21% | (65 runs sampled) |
+| time-stamp | 683,091 ops/sec     | ±1.04% | (65 runs sampled) |
+| fecha      | 548,628 ops/sec     | ±0.90% | (64 runs sampled) |
+| moment     | 505,969 ops/sec     | ±1.13% | (64 runs sampled) |
+| date-fns   | 488,131 ops/sec     | ±0.97% | (63 runs sampled) |
+| dayjs      | 307,569 ops/sec     | ±0.59% | (63 runs sampled) |
+| dateformat | 133,583 ops/sec     | ±0.92% | (63 runs sampled) |
+| luxon      | 2,808 ops/sec       | ±3.24% | (19 runs sampled) |
+
+#### Firefox 59.0.0
+
+|            | ops/sec               |        |                   |
+| :--------- | --------------------: | -----: | ----------------: |
+| **fdate**  | **1,373,935 ops/sec** | ±2.58% | (48 runs sampled) |
+| fecha      | 988,180 ops/sec       | ±2.68% | (47 runs sampled) |
+| time-stamp | 601,037 ops/sec       | ±2.84% | (45 runs sampled) |
+| moment     | 479,960 ops/sec       | ±2.57% | (47 runs sampled) |
+| date-fns   | 478,713 ops/sec       | ±3.20% | (47 runs sampled) |
+| dayjs      | 269,816 ops/sec       | ±3.10% | (47 runs sampled) |
+| dateformat | 62,120 ops/sec        | ±2.12% | (50 runs sampled) |
+| luxon      | 2,945 ops/sec         | ±2.72% | (20 runs sampled) |
 
 ### Advanced usage
 
@@ -105,41 +105,41 @@ See [benchmarks](./benchmarks) for more details.
 
 |            | ops/sec             |        |                   |
 | :--------- | ------------------: | -----: | ----------------: |
-| **fdate**  | **487,123 ops/sec** | ±2.39% | (84 runs sampled) |
-| moment     | 429,814 ops/sec     | ±7.70% | (84 runs sampled) |
-| fecha      | 180,108 ops/sec     | ±1.90% | (86 runs sampled) |
-| date-fns   | 120,219 ops/sec     | ±1.34% | (86 runs sampled) |
-| dateformat | 104,204 ops/sec     | ±1.29% | (85 runs sampled) |
-| luxon      | 472 ops/sec         | ±2.01% | (81 runs sampled) |
+| **fdate**  | **842,085 ops/sec** | ±1.83% | (83 runs sampled) |
+| moment     | 479,692 ops/sec     | ±7.26% | (87 runs sampled) |
+| fecha      | 204,389 ops/sec     | ±2.47% | (84 runs sampled) |
+| date-fns   | 129,711 ops/sec     | ±1.67% | (86 runs sampled) |
+| dateformat | 111,659 ops/sec     | ±1.92% | (82 runs sampled) |
+| luxon      | 549 ops/sec         | ±1.23% | (87 runs sampled) |
 
-#### Chrome 66.0.3359 (Windows 10 0.0.0)
+#### Chrome 66.0.3359
 
-|            | ops/sec             |        |                   |
-| :--------- | ------------------: | -----: | ----------------: |
-| **fdate**  | **601,323 ops/sec** | ±0.93% | (62 runs sampled) |
-| moment     | 565,947 ops/sec     | ±1.14% | (60 runs sampled) |
-| fecha      | 508,299 ops/sec     | ±0.83% | (63 runs sampled) |
-| date-fns   | 337,258 ops/sec     | ±0.96% | (63 runs sampled) |
-| dateformat | 137,248 ops/sec     | ±1.42% | (62 runs sampled) |
-| luxon      | 489 ops/sec         | ±1.24% | (60 runs sampled) |
+|            | ops/sec               |        |                   |
+| :--------- | --------------------: | -----: | ----------------: |
+| **fdate**  | **1,159,099 ops/sec** | ±0.73% | (65 runs sampled) |
+| moment     | 619,972 ops/sec       | ±0.74% | (62 runs sampled) |
+| fecha      | 573,963 ops/sec       | ±1.10% | (62 runs sampled) |
+| date-fns   | 368,440 ops/sec       | ±0.55% | (64 runs sampled) |
+| dateformat | 142,079 ops/sec       | ±0.49% | (64 runs sampled) |
+| luxon      | 562 ops/sec           | ±1.11% | (60 runs sampled) |
 
-#### Firefox 59.0.0 (Windows 10 0.0.0)
+#### Firefox 59.0.0
 
-|            | ops/sec             |        |                   |
-| :--------- | ------------------: | -----: | ----------------: |
-| fecha      | 754,953 ops/sec     | ±3.44% | (44 runs sampled) |
-| moment     | 397,211 ops/sec     | ±3.44% | (46 runs sampled) |
-| date-fns   | 268,545 ops/sec     | ±5.27% | (43 runs sampled) |
-| **fdate**  | **168,387 ops/sec** | ±5.00% | (42 runs sampled) |
-| dateformat | 56,548 ops/sec      | ±2.56% | (45 runs sampled) |
-| luxon      | 462 ops/sec         | ±3.17% | (42 runs sampled) |
+|            | ops/sec               |        |                   |
+| :--------- | --------------------: | -----: | ----------------: |
+| **fdate**  | **1,358,185 ops/sec** | ±2.62% | (47 runs sampled) |
+| fecha      | 965,889 ops/sec       | ±3.61% | (46 runs sampled) |
+| date-fns   | 342,457 ops/sec       | ±2.67% | (48 runs sampled) |
+| moment     | 449,780 ops/sec       | ±2.26% | (48 runs sampled) |
+| dateformat | 60,055 ops/sec        | ±1.60% | (49 runs sampled) |
+| luxon      | 554 ops/sec           | ±2.17% | (45 runs sampled) |
 
 ### Bundle size (Webpack)
 
 |            | size        | gzipped       |
 | :--------- | ----------: | ------------: |
 | time-stamp | 1.12 KB     | 658 bytes     |
-| **fdate**  | **2.05 KB** | **986 bytes** |
+| **fdate**  | **2.14 KB** | **915 bytes** |
 | dateformat | 3.36 KB     | 1.66 KB       |
 | fecha      | 5.13 KB     | 2.06 KB       |
 | dayjs      | 6.30 KB     | 2.26 KB       |
