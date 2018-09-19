@@ -1,5 +1,5 @@
 import resolve from 'rollup-plugin-node-resolve';
-import uglify from 'rollup-plugin-uglify-es';
+import { terser } from 'rollup-plugin-terser';
 import gzip from 'rollup-plugin-gzip';
 
 const licenseComment = `
@@ -37,6 +37,12 @@ export default [
       format: 'umd',
       banner: licenseComment,
     },
-    plugins: [...defaultOpts.plugins, uglify(), gzip()],
+    plugins: [
+      ...defaultOpts.plugins,
+      terser({
+        output: { comments: /^!/ },
+      }),
+      gzip(),
+    ],
   },
 ];
