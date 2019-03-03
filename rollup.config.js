@@ -1,4 +1,5 @@
 import resolve from 'rollup-plugin-node-resolve';
+import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
 import gzip from 'rollup-plugin-gzip';
 
@@ -11,15 +12,32 @@ const licenseComment = `
 `.trim();
 
 const defaultOpts = {
-  input: './lib/index.mjs',
+  input: './src/index.ts',
   output: {
     name: 'fdate',
     sourcemap: true,
   },
-  plugins: [resolve()],
+  plugins: [
+    resolve(),
+    typescript({
+      useTsconfigDeclarationDir: true,
+    }),
+    terser({
+      output: { comments: /^!/ },
+    }),
+  ],
 };
 
 export default [
+  {
+    input: defaultOpts.input,
+    output: {
+      ...defaultOpts.output,
+      file: './lib/index.mjs',
+      format: 'esm',
+    },
+    plugins: [...defaultOpts.plugins, gzip()],
+  },
   {
     input: defaultOpts.input,
     output: {
@@ -33,16 +51,10 @@ export default [
     input: defaultOpts.input,
     output: {
       ...defaultOpts.output,
-      file: './dist/index.min.js',
+      file: './lib/index.umd.js',
       format: 'umd',
       banner: licenseComment,
     },
-    plugins: [
-      ...defaultOpts.plugins,
-      terser({
-        output: { comments: /^!/ },
-      }),
-      gzip(),
-    ],
+    plugins: [...defaultOpts.plugins, gzip()],
   },
 ];

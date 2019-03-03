@@ -115,3 +115,4 @@ $RECYCLE.BIN/
 
 /lib
 /dist
+.rpt2_cache*
