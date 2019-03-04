@@ -16,9 +16,12 @@
     "build": "rollup -c",
     "clean": "rimraf lib",
     "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "npm run build",
+    "test": "npm-run-all test:*",
+    "test:bundlesize": "bundlesize"
   },
   "devDependencies": {
+    "bundlesize": "^0.17.1",
     "npm-run-all": "^4.1.5",
     "renamer": "^1.1.1",
     "rimraf": "^2.6.3",
@@ -34,6 +37,12 @@
     "datetime",
     "format",
     "formatter"
+  ],
+  "bundlesize": [
+    {
+      "path": "./lib/index.umd.js",
+      "maxSize": "1 kB"
+    }
   ],
   "jsdelivr": "lib/index.umd.js",
   "types": "lib/index.d.ts",
