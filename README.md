@@ -2,6 +2,7 @@
 
 [![NPM](https://nodei.co/npm/lit-date.png?mini=true)](https://nodei.co/npm/lit-date/)
 ![filesize](https://img.badgesize.io/https://unpkg.com/lit-date.svg?compression=gzip&style=flat-square)
+[![codecov](https://flat.badgen.net/codecov/c/github/3846masa/lit-date)](https://codecov.io/gh/3846masa/lit-date)
 
 > Light-weight, faster datetime formatter for modern browsers.
 
