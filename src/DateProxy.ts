@@ -16,7 +16,7 @@ class DateProxy {
   }
   /** Quarter */
   get quarter() {
-    return Math.floor(this.date.getMonth() / 3);
+    return Math.ceil(this.month / 3);
   }
   /** Quarter */
   get Q() {
@@ -76,7 +76,8 @@ class DateProxy {
   }
   /** Hour (1-12) */
   get h() {
-    return this.hour % 12 + 1;
+    const hour = this.hour % 12;
+    return hour !== 0 ? hour : 12;
   }
   /** Padded Hour (1-12) */
   get hh() {
@@ -84,7 +85,7 @@ class DateProxy {
   }
   /** Hour (1-24) */
   get k() {
-    return this.hour + 1;
+    return this.hour === 0 ? 24 : this.hour;
   }
   /** Padded Hour (1-24) */
   get kk() {
