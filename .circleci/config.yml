@@ -1,5 +1,14 @@
 version: 2
 jobs:
+  benchmark:
+    docker:
+      - image: circleci/node:8-jessie-browsers
+    steps:
+      - checkout
+      - run:
+          command: |
+            cd benchmarks
+            yarn install && yarn benchmark
   build:
     docker:
       - image: circleci/node:8
@@ -42,6 +51,16 @@ jobs:
 
 workflows:
   version: 2
+  benchmark:
+    triggers:
+      - schedule:
+          cron: "0 0 * * 0"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - benchmark
   build-test-deploy:
     jobs:
       - build:
@@ -56,6 +75,14 @@ workflows:
           requires:
             - build
             - test
+          filters:
+            tags:
+              only: /v\d+(\.\d+)*/
+            branches:
+              ignore: /.*/
+      - benchmark:
+          requires:
+            - deploy
           filters:
             tags:
               only: /v\d+(\.\d+)*/

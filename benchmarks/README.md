@@ -2,28 +2,16 @@
 
 ## Usage
 
-### Prepare dependencies
+### Benchmark on browser
 
 ```bash
-yarn
+yarn && yarn benchmark
 ```
 
-### Benchmark on browser with Karma
+### Bundle size
 
 ```bash
-yarn benchmark:client
-```
-
-### Benchmark on Node.js
-
-```bash
-yarn benchmark:server
-```
-
-### Bundle size via Webpack
-
-```bash
-yarn bundle
+yarn && yarn bundlesize
 ```
 
 ## License

@@ -2,39 +2,29 @@
   "private": true,
   "name": "benchmarks",
   "scripts": {
-    "benchmark:client": "karma start",
-    "benchmark:server": "node --icu-data-dir=./node_modules/full-icu -r esm scripts/benchmark-server.js",
-    "bundle": "node -r esm scripts/bundle.js"
+    "benchmark": "karma start",
+    "bundlesize": "package-size --sort date-fns dateformat dayjs fecha luxon moment time-stamp lit-date"
   },
   "dependencies": {
     "date-fns": "*",
     "dateformat": "*",
     "dayjs": "*",
-    "lit-date": "*",
     "fecha": "*",
     "luxon": "*",
     "moment": "*",
+    "lit-date": "*",
     "time-stamp": "*"
   },
   "devDependencies": {
-    "beautify-benchmark": "^0.2.4",
     "benchmark": "^2.1.4",
-    "chalk": "^2.4.1",
-    "compression-webpack-plugin": "^2.0.0",
-    "esm": "^3.0.28",
-    "fs-extra": "^7.0.1",
-    "full-icu": "^1.2.1",
-    "globby": "^9.0.0",
-    "humanize": "^0.0.9",
     "karma": "^4.0.1",
+    "karma-benchmark": "^1.0.1",
+    "karma-benchmark-plotly-reporter": "^1.0.0",
+    "karma-benchmarkjs-reporter": "^1.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-firefox-launcher": "^1.1.0",
     "karma-webpack": "^4.0.0-rc.6",
-    "webpack": "^4.6.0",
-    "webpack-bundle-analyzer": "^3.1.0",
-    "webpack-cli": "^3.2.3"
-  },
-  "esm": {
-    "cjs": true
+    "package-size": "^2.1.2",
+    "webpack": "^4.29.6"
   }
 }
