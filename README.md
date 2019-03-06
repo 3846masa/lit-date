@@ -12,14 +12,6 @@
 - 🦄 Very faster than other datetime libraries (e.g. `moment`)
 - 🆕 Powered by `litdate literals`
 
-## Table of Contents
-
-- [Install](#install)
-- [Usage](#usage)
-- [Benchmark](#benchmark)
-- [Contribute](#contribute)
-- [License](#license)
-
 ## Install
 
 ### Node.js
@@ -66,94 +58,54 @@ See [benchmarks](https://github.com/3846masa/lit-date/tree/master/benchmarks) fo
 
 - `new Date()` -> `2000/01/06`
 
-#### Node.js v10.10.0
+|         Chrome          |         Firefox          |
+| :---------------------: | :----------------------: |
+| ![Basic usage / Chrome] | ![Basic usage / Firefox] |
 
-|              |             ops/sec |        |                   |
-| :----------- | ------------------: | -----: | ----------------: |
-| **lit-date** | **279,762 ops/sec** | ±1.11% | (88 runs sampled) |
-| time-stamp   |     247,083 ops/sec | ±1.11% | (90 runs sampled) |
-| date-fns     |     244,455 ops/sec | ±1.05% | (89 runs sampled) |
-| moment       |     241,140 ops/sec | ±1.33% | (91 runs sampled) |
-| fecha        |     232,466 ops/sec | ±1.08% | (91 runs sampled) |
-| dayjs        |     210,611 ops/sec | ±0.97% | (91 runs sampled) |
-| luxon        |     167,198 ops/sec | ±1.13% | (89 runs sampled) |
-| dateformat   |      96,692 ops/sec | ±1.05% | (86 runs sampled) |
-
-#### Chrome 69.0.3497
-
-|              |             ops/sec |        |                   |
-| :----------- | ------------------: | -----: | ----------------: |
-| **lit-date** | **573,465 ops/sec** | ±1.42% | (60 runs sampled) |
-| time-stamp   |     387,719 ops/sec | ±2.25% | (59 runs sampled) |
-| fecha        |     375,460 ops/sec | ±0.72% | (61 runs sampled) |
-| date-fns     |     342,209 ops/sec | ±1.25% | (61 runs sampled) |
-| moment       |     325,720 ops/sec | ±1.08% | (62 runs sampled) |
-| dayjs        |     244,039 ops/sec | ±4.33% | (59 runs sampled) |
-| luxon        |     167,208 ops/sec | ±1.36% | (60 runs sampled) |
-| dateformat   |      97,894 ops/sec | ±1.90% | (60 runs sampled) |
-
-#### Firefox 62.0.0
-
-|              |               ops/sec |        |                   |
-| :----------- | --------------------: | -----: | ----------------: |
-| **lit-date** | **1,135,997 ops/sec** | ±2.55% | (59 runs sampled) |
-| fecha        |       823,049 ops/sec | ±3.11% | (57 runs sampled) |
-| time-stamp   |       531,863 ops/sec | ±4.40% | (58 runs sampled) |
-| date-fns     |       435,223 ops/sec | ±3.51% | (59 runs sampled) |
-| moment       |       410,513 ops/sec | ±3.49% | (61 runs sampled) |
-| dayjs        |       369,565 ops/sec | ±2.85% | (59 runs sampled) |
-| luxon        |       170,537 ops/sec | ±2.88% | (61 runs sampled) |
-| dateformat   |        63,390 ops/sec | ±2.26% | (63 runs sampled) |
+[Basic usage / Chrome]: https://plot.ly/~3846masa/10.png?width=700&height=700
+[Basic usage / Firefox]: https://plot.ly/~3846masa/4.png?width=700&height=700
 
 ### Advanced usage
 
-- `new Date()` -> `1月6日(木)` (written in Japanese)
+- `new Date()` -> `1月6日(木)`
 
-#### Node.js v10.10.0
+|           Chrome           |           Firefox           |
+| :------------------------: | :-------------------------: |
+| ![Advanced usage / Chrome] | ![Advanced usage / Firefox] |
 
-|              |             ops/sec |        |                   |
-| :----------- | ------------------: | -----: | ----------------: |
-| **lit-date** | **291,909 ops/sec** | ±1.26% | (88 runs sampled) |
-| moment       |     258,888 ops/sec | ±1.62% | (89 runs sampled) |
-| fecha        |     245,678 ops/sec | ±0.99% | (93 runs sampled) |
-| date-fns     |     189,735 ops/sec | ±0.89% | (90 runs sampled) |
-| dateformat   |      96,810 ops/sec | ±0.95% | (92 runs sampled) |
-| luxon        |         688 ops/sec | ±1.18% | (85 runs sampled) |
+[Advanced usage / Chrome]: https://plot.ly/~3846masa/6.png?width=700&height=700
+[Advanced usage / Firefox]: https://plot.ly/~3846masa/7.png?width=700&height=700
 
-#### Chrome 69.0.3497
+### Bundle size
 
-|              |             ops/sec |        |                   |
-| :----------- | ------------------: | -----: | ----------------: |
-| **lit-date** | **536,842 ops/sec** | ±0.82% | (65 runs sampled) |
-| fecha        |     394,640 ops/sec | ±1.58% | (62 runs sampled) |
-| moment       |     322,982 ops/sec | ±1.25% | (61 runs sampled) |
-| date-fns     |     254,257 ops/sec | ±1.00% | (63 runs sampled) |
-| dateformat   |      96,633 ops/sec | ±0.77% | (62 runs sampled) |
-| luxon        |         624 ops/sec | ±1.42% | (44 runs sampled) |
+|              |               size |               gzip |
+| :----------- | -----------------: | -----------------: |
+| time-stamp   | ![time-stamp_size] | ![time-stamp_gzip] |
+| **lit-date** |   ![lit-date_size] |   ![lit-date_gzip] |
+| dateformat   | ![dateformat_size] | ![dateformat_gzip] |
+| fecha        |      ![fecha_size] |      ![fecha_gzip] |
+| dayjs        |      ![dayjs_size] |      ![dayjs_gzip] |
+| date-fns     |   ![date-fns_size] |   ![date-fns_gzip] |
+| luxon        |      ![luxon_size] |      ![luxon_gzip] |
+| moment       |     ![moment_size] |     ![moment_gzip] |
 
-#### Firefox 62.0.0
+[time-stamp_size]: https://flat.badgen.net/bundlephobia/min/time-stamp?label=size
+[lit-date_size]: https://flat.badgen.net/bundlephobia/min/lit-date?label=size
+[dateformat_size]: https://flat.badgen.net/bundlephobia/min/dateformat?label=size
+[fecha_size]: https://flat.badgen.net/bundlephobia/min/fecha?label=size
+[dayjs_size]: https://flat.badgen.net/bundlephobia/min/dayjs?label=size
+[date-fns_size]: https://flat.badgen.net/bundlephobia/min/date-fns?label=size
+[moment_size]: https://flat.badgen.net/bundlephobia/min/moment?label=size
+[luxon_size]: https://flat.badgen.net/bundlephobia/min/luxon?label=size
 
-|              |               ops/sec |        |                   |
-| :----------- | --------------------: | -----: | ----------------: |
-| **lit-date** | **1,208,619 ops/sec** | ±2.43% | (63 runs sampled) |
-| fecha        |       827,057 ops/sec | ±4.89% | (57 runs sampled) |
-| moment       |       380,293 ops/sec | ±3.39% | (56 runs sampled) |
-| date-fns     |       317,868 ops/sec | ±2.57% | (61 runs sampled) |
-| dateformat   |        62,233 ops/sec | ±2.06% | (63 runs sampled) |
-| luxon        |           864 ops/sec | ±2.93% | (54 runs sampled) |
-
-### Bundle size (Webpack)
-
-|              |        size |       gzipped |
-| :----------- | ----------: | ------------: |
-| time-stamp   |     1.74 KB |     861 bytes |
-| **lit-date** | **2.29 KB** | **943 bytes** |
-| dateformat   |     3.80 KB |       1.81 KB |
-| fecha        |     5.50 KB |       2.18 KB |
-| dayjs        |     7.21 KB |       2.76 KB |
-| date-fns     |     9.34 KB |       3.13 KB |
-| moment       |    51.85 KB |      16.77 KB |
-| luxon        |    60.37 KB |      18.45 KB |
+[time-stamp_gzip]: https://flat.badgen.net/bundlephobia/minzip/time-stamp?label=gzip&color=green
+[lit-date_gzip]: https://flat.badgen.net/bundlephobia/minzip/lit-date?label=gzip&color=green
+[dateformat_gzip]: https://flat.badgen.net/bundlephobia/minzip/dateformat?label=gzip&color=green
+[fecha_gzip]: https://flat.badgen.net/bundlephobia/minzip/fecha?label=gzip&color=green
+[dayjs_gzip]: https://flat.badgen.net/bundlephobia/minzip/dayjs?label=gzip&color=green
+[date-fns_gzip]: https://flat.badgen.net/bundlephobia/minzip/date-fns?label=gzip&color=green
+[moment_gzip]: https://flat.badgen.net/bundlephobia/minzip/moment?label=gzip&color=green
+[luxon_gzip]: https://flat.badgen.net/bundlephobia/minzip/luxon?label=gzip&color=green
 
 ## Contribute
 
