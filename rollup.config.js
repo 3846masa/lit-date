@@ -19,9 +19,7 @@ const defaultOpts = {
   },
   plugins: [
     resolve(),
-    typescript({
-      useTsconfigDeclarationDir: true,
-    }),
+    typescript(),
     terser({
       output: { comments: /^!/ },
     }),
