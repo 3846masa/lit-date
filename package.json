@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "3846masa <3846masahiro+git@gmail.com>",
   "repository": "git@github.com:3846masa/lit-date.git",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
   "browser": "lib/index.umd.js",
