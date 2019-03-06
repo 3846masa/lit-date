@@ -1,4 +1,4 @@
-# Benchmark for `fdate`
+# Benchmark for `lit-date`
 
 ## Usage
 

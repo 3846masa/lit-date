@@ -13,7 +13,7 @@ export default {
     dayjs: 'dayjs',
     dateformat: 'dateformat',
     'time-stamp': 'time-stamp',
-    fdate: 'fdate',
+    'lit-date': 'lit-date',
   },
   output: {
     path: path.resolve(__dirname, '../tmp'),

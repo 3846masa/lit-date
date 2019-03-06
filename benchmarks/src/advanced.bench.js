@@ -5,7 +5,7 @@ import fecha from 'fecha';
 import { format as dateFnsFormat } from 'date-fns';
 import dateFnsLocaleJa from 'date-fns/locale/ja';
 import dateformat from 'dateformat';
-import fdate from 'fdate';
+import litdate from 'lit-date';
 
 import createBenchmark from './lib/createBenchmark';
 
@@ -46,8 +46,8 @@ export default createBenchmark('Advanced usage', {
     const actual = dateformat(date, 'm月d日(ddd)');
     console.assert(actual === expected);
   },
-  fdate() {
-    const actual = fdate`${'M'}月${'D'}日(${dayOfWeekToName})`(date);
+  ['lit-date']() {
+    const actual = litdate`${'M'}月${'D'}日(${dayOfWeekToName})`(date);
     console.assert(actual === expected);
   },
 });

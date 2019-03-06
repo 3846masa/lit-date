@@ -5,7 +5,7 @@ import { format as dateFnsFormat } from 'date-fns';
 import dayjs from 'dayjs';
 import dateformat from 'dateformat';
 import timeStamp from 'time-stamp';
-import fdate from 'fdate';
+import litdate from 'lit-date';
 
 import createBenchmark from './lib/createBenchmark';
 
@@ -41,8 +41,8 @@ export default createBenchmark('Basic usage', {
     const actual = timeStamp('YYYY/MM/DD', date);
     console.assert(actual === expected);
   },
-  fdate() {
-    const actual = fdate`${'YYYY'}/${'MM'}/${'DD'}`(date);
+  ['lit-date']() {
+    const actual = litdate`${'YYYY'}/${'MM'}/${'DD'}`(date);
     console.assert(actual === expected);
   },
 });

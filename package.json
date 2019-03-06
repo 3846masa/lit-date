@@ -1,9 +1,9 @@
 {
-  "name": "fdate",
+  "name": "lit-date",
   "description": "Light-weight, faster datetime formatter for modern browsers",
   "license": "MIT",
   "author": "3846masa <3846masahiro+git@gmail.com>",
-  "repository": "git@github.com:3846masa/fdate.git",
+  "repository": "git@github.com:3846masa/lit-date.git",
   "version": "0.0.5",
   "main": "lib/index.js",
   "module": "lib/index.mjs",

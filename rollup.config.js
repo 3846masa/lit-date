@@ -14,7 +14,7 @@ const licenseComment = `
 const defaultOpts = {
   input: './src/index.ts',
   output: {
-    name: 'fdate',
+    name: 'litdate',
     sourcemap: true,
   },
   plugins: [

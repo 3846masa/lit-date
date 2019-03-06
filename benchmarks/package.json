@@ -10,7 +10,7 @@
     "date-fns": "*",
     "dateformat": "*",
     "dayjs": "*",
-    "fdate": "*",
+    "lit-date": "*",
     "fecha": "*",
     "luxon": "*",
     "moment": "*",

@@ -1,11 +1,11 @@
-import fdate from 'fdate';
+import litdate from 'lit-date';
 
 const now = new Date();
 
 // Basic
 {
-  const render = fdate`${'YYYY'}-${'MM'}-${'DD'}T${'HH'}:${'mm'}:${'ss'}.${'SSS'}${'ZZ'}`;
-  console.log(render(now));
+  const format = litdate`${'YYYY'}-${'MM'}-${'DD'}T${'HH'}:${'mm'}:${'ss'}.${'SSS'}${'ZZ'}`;
+  console.log(format(now));
 }
 
 // With function
@@ -25,13 +25,13 @@ const now = new Date();
     }
     return `${day}th`;
   };
-  const render = fdate`${monthName} ${dayWithSuffix}, ${'YYYY'}`;
-  console.log(render(now));
+  const format = litdate`${monthName} ${dayWithSuffix}, ${'YYYY'}`;
+  console.log(format(now));
 }
 
 // Intl
 {
   const dayOfWeekName = ({ dayOfWeek }) => ['日', '月', '火', '水', '木', '金', '土'][dayOfWeek];
-  const render = fdate`${'M'}月${'D'}日${dayOfWeekName}曜日`;
-  console.log(render(now));
+  const format = litdate`${'M'}月${'D'}日${dayOfWeekName}曜日`;
+  console.log(format(now));
 }
