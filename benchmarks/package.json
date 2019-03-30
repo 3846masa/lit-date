@@ -3,17 +3,21 @@
   "name": "benchmarks",
   "scripts": {
     "benchmark": "karma start",
-    "bundlesize": "package-size --sort date-fns dateformat dayjs fecha luxon moment time-stamp lit-date"
+    "bundlesize": "package-size --sort date-fns dateformat dayjs fecha luxon moment time-stamp lit-date tinytime tinydate formatoid date-format"
   },
   "dependencies": {
     "date-fns": "*",
+    "date-format": "*",
     "dateformat": "*",
     "dayjs": "*",
     "fecha": "*",
+    "formatoid": "*",
+    "lit-date": "*",
     "luxon": "*",
     "moment": "*",
-    "lit-date": "*",
-    "time-stamp": "*"
+    "time-stamp": "*",
+    "tinydate": "*",
+    "tinytime": "*"
   },
   "devDependencies": {
     "benchmark": "^2.1.4",

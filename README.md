@@ -79,16 +79,20 @@ See [benchmarks](https://github.com/3846masa/lit-date/tree/master/benchmarks) fo
 
 ### Bundle size
 
-|              |               size |               gzip |
-| :----------- | -----------------: | -----------------: |
-| time-stamp   | ![time-stamp_size] | ![time-stamp_gzip] |
-| **lit-date** |   ![lit-date_size] |   ![lit-date_gzip] |
-| dateformat   | ![dateformat_size] | ![dateformat_gzip] |
-| fecha        |      ![fecha_size] |      ![fecha_gzip] |
-| dayjs        |      ![dayjs_size] |      ![dayjs_gzip] |
-| date-fns     |   ![date-fns_size] |   ![date-fns_gzip] |
-| luxon        |      ![luxon_size] |      ![luxon_gzip] |
-| moment       |     ![moment_size] |     ![moment_gzip] |
+|              |                size |                gzip |
+| :----------- | ------------------: | ------------------: |
+| tinydate     |    ![tinydate_size] |    ![tinydate_gzip] |
+| time-stamp   |  ![time-stamp_size] |  ![time-stamp_gzip] |
+| **lit-date** |    ![lit-date_size] |    ![lit-date_gzip] |
+| tinytime     |    ![tinytime_size] |    ![tinytime_gzip] |
+| date-format  | ![date-format_size] | ![date-format_gzip] |
+| dateformat   |  ![dateformat_size] |  ![dateformat_gzip] |
+| formatoid    |   ![formatoid_size] |   ![formatoid_gzip] |
+| fecha        |       ![fecha_size] |       ![fecha_gzip] |
+| dayjs        |       ![dayjs_size] |       ![dayjs_gzip] |
+| date-fns     |    ![date-fns_size] |    ![date-fns_gzip] |
+| luxon        |       ![luxon_size] |       ![luxon_gzip] |
+| moment       |      ![moment_size] |      ![moment_gzip] |
 
 [time-stamp_size]: https://flat.badgen.net/bundlephobia/min/time-stamp?label=size
 [lit-date_size]: https://flat.badgen.net/bundlephobia/min/lit-date?label=size
@@ -98,6 +102,10 @@ See [benchmarks](https://github.com/3846masa/lit-date/tree/master/benchmarks) fo
 [date-fns_size]: https://flat.badgen.net/bundlephobia/min/date-fns?label=size
 [moment_size]: https://flat.badgen.net/bundlephobia/min/moment?label=size
 [luxon_size]: https://flat.badgen.net/bundlephobia/min/luxon?label=size
+[tinytime_size]: https://flat.badgen.net/bundlephobia/min/tinytime?label=size
+[tinydate_size]: https://flat.badgen.net/bundlephobia/min/tinydate?label=size
+[date-format_size]: https://flat.badgen.net/bundlephobia/min/date-format?label=size
+[formatoid_size]: https://flat.badgen.net/bundlephobia/min/formatoid?label=size
 
 [time-stamp_gzip]: https://flat.badgen.net/bundlephobia/minzip/time-stamp?label=gzip&color=green
 [lit-date_gzip]: https://flat.badgen.net/bundlephobia/minzip/lit-date?label=gzip&color=green
@@ -107,6 +115,10 @@ See [benchmarks](https://github.com/3846masa/lit-date/tree/master/benchmarks) fo
 [date-fns_gzip]: https://flat.badgen.net/bundlephobia/minzip/date-fns?label=gzip&color=green
 [moment_gzip]: https://flat.badgen.net/bundlephobia/minzip/moment?label=gzip&color=green
 [luxon_gzip]: https://flat.badgen.net/bundlephobia/minzip/luxon?label=gzip&color=green
+[tinytime_gzip]: https://flat.badgen.net/bundlephobia/minzip/tinytime?label=gzip&color=green
+[tinydate_gzip]: https://flat.badgen.net/bundlephobia/minzip/tinydate?label=gzip&color=green
+[date-format_gzip]: https://flat.badgen.net/bundlephobia/minzip/date-format?label=gzip&color=green
+[formatoid_gzip]: https://flat.badgen.net/bundlephobia/minzip/formatoid?label=gzip&color=green
 
 ## Contribute
 

@@ -4,7 +4,11 @@ import fecha from 'fecha';
 import { format as dateFnsFormat } from 'date-fns';
 import dayjs from 'dayjs';
 import dateformat from 'dateformat';
+import dateFormat2 from 'date-format';
 import timeStamp from 'time-stamp';
+import tinytime from 'tinytime';
+import tinydate from 'tinydate';
+import formatoid from 'formatoid';
 import litdate from 'lit-date';
 
 const date = new Date('2000-01-06T12:34:56.789Z');
@@ -35,8 +39,24 @@ suite('Basic usage', () => {
     const actual = dateformat(date, 'yyyy/mm/dd');
     console.assert(actual === expected);
   });
+  benchmark('date-format', () => {
+    const actual = dateFormat2.asString('yyyy/MM/dd', date);
+    console.assert(actual === expected);
+  });
   benchmark('time-stamp', () => {
     const actual = timeStamp('YYYY/MM/DD', date);
+    console.assert(actual === expected);
+  });
+  benchmark('tinytime', () => {
+    const actual = tinytime('{YYYY}/{Mo}/{DD}', { padMonth: true }).render(date);
+    console.assert(actual === expected);
+  });
+  benchmark('tinydate', () => {
+    const actual = tinydate('{YYYY}/{MM}/{DD}')(date);
+    console.assert(actual === expected);
+  });
+  benchmark('formatoid', () => {
+    const actual = formatoid(date, 'YYYY/MM/DD');
     console.assert(actual === expected);
   });
   benchmark('lit-date', () => {
