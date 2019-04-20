@@ -11,7 +11,7 @@
 - ⏰ Formatter for **Date** object
 - 👼 Light-weight (**~1kB** gzipped!)
 - 🦄 Very faster than other datetime libraries (e.g. `moment`)
-- 🆕 Powered by `litdate literals`
+- 🆕 Powered by `Template literals`
 
 ## Install
 
@@ -31,7 +31,7 @@ yarn add lit-date
 
 ```html
 <script type="module">
-import litdate from 'https://unpkg.com/lit-date?module';
+  import litdate from 'https://unpkg.com/lit-date?module';
 </script>
 ```
 
@@ -63,8 +63,8 @@ See [benchmarks](https://github.com/3846masa/lit-date/tree/master/benchmarks) fo
 | :---------------------: | :----------------------: |
 | ![Basic usage / Chrome] | ![Basic usage / Firefox] |
 
-[Basic usage / Chrome]: https://plot.ly/~3846masa/10.png?width=700&height=700
-[Basic usage / Firefox]: https://plot.ly/~3846masa/4.png?width=700&height=700
+[basic usage / chrome]: https://plot.ly/~3846masa/10.png?width=700&height=700
+[basic usage / firefox]: https://plot.ly/~3846masa/4.png?width=700&height=700
 
 ### Advanced usage
 
@@ -74,8 +74,8 @@ See [benchmarks](https://github.com/3846masa/lit-date/tree/master/benchmarks) fo
 | :------------------------: | :-------------------------: |
 | ![Advanced usage / Chrome] | ![Advanced usage / Firefox] |
 
-[Advanced usage / Chrome]: https://plot.ly/~3846masa/6.png?width=700&height=700
-[Advanced usage / Firefox]: https://plot.ly/~3846masa/7.png?width=700&height=700
+[advanced usage / chrome]: https://plot.ly/~3846masa/6.png?width=700&height=700
+[advanced usage / firefox]: https://plot.ly/~3846masa/7.png?width=700&height=700
 
 ### Bundle size
 
@@ -106,7 +106,6 @@ See [benchmarks](https://github.com/3846masa/lit-date/tree/master/benchmarks) fo
 [tinydate_size]: https://flat.badgen.net/bundlephobia/min/tinydate?label=size
 [date-format_size]: https://flat.badgen.net/bundlephobia/min/date-format?label=size
 [formatoid_size]: https://flat.badgen.net/bundlephobia/min/formatoid?label=size
-
 [time-stamp_gzip]: https://flat.badgen.net/bundlephobia/minzip/time-stamp?label=gzip&color=green
 [lit-date_gzip]: https://flat.badgen.net/bundlephobia/minzip/lit-date?label=gzip&color=green
 [dateformat_gzip]: https://flat.badgen.net/bundlephobia/minzip/dateformat?label=gzip&color=green
