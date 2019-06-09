@@ -24,7 +24,7 @@
     "test:bundlesize": "bundlesize"
   },
   "devDependencies": {
-    "ava": "^1.2.1",
+    "ava": "^2.0.0",
     "bundlesize": "^0.17.1",
     "codecov": "^3.2.0",
     "esm": "^3.2.10",
