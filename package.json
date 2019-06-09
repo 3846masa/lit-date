@@ -34,7 +34,7 @@
     "rimraf": "^2.6.3",
     "rollup": "^1.4.0",
     "rollup-plugin-gzip": "^2.2.0",
-    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-node-resolve": "^5.0.1",
     "rollup-plugin-terser": "^4.0.4",
     "rollup-plugin-typescript2": "^0.21.1",
     "ts-node": "^8.0.2",
