@@ -3,15 +3,13 @@ const isChrome =
   typeof navigator !== 'undefined' && /Chrom(?:e|ium)/.test(navigator.userAgent);
 
 const loosePolyfill = (callSite: TemplateStringsArray, ...substitutions: any[]) => {
+  let t = '';
   const raw = callSite.raw;
-  const arr = [];
-  const length = (arr.length = raw.length - 1);
+  const length = raw.length - 1;
   for (let idx = 0; idx < length; idx++) {
-    arr.push(raw[idx]);
-    arr.push(substitutions[idx]);
+    t += raw[idx] + substitutions[idx];
   }
-  arr.push(raw[length]);
-  return arr.join('');
+  return t + raw[length];
 };
 
 // NOTE: Use polyfill because Chrome has performance issue for String.raw
