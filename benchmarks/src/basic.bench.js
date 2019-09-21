@@ -28,7 +28,7 @@ suite('Basic usage', () => {
     console.assert(actual === expected);
   });
   benchmark('date-fns', () => {
-    const actual = dateFnsFormat(date, 'YYYY/MM/DD');
+    const actual = dateFnsFormat(date, 'yyyy/MM/dd');
     console.assert(actual === expected);
   });
   benchmark('dayjs', () => {

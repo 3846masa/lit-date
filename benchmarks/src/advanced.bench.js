@@ -37,7 +37,7 @@ suite('Advanced usage', () => {
     console.assert(actual === expected);
   });
   benchmark('date-fns', () => {
-    const actual = dateFnsFormat(date, 'M月D日(dd)', { locale: dateFnsLocaleJa });
+    const actual = dateFnsFormat(date, 'M月d日(eee)', { locale: dateFnsLocaleJa });
     console.assert(actual === expected);
   });
   benchmark('dateformat', () => {
