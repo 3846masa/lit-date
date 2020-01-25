@@ -46,7 +46,6 @@
     "formatter"
   ],
   "ava": {
-    "compileEnhancements": false,
     "files": [
       "tests/**/*.spec.ts"
     ],
