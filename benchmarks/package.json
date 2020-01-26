@@ -6,29 +6,29 @@
     "bundlesize": "package-size --sort date-fns dateformat dayjs fecha luxon moment time-stamp lit-date tinytime tinydate formatoid date-format"
   },
   "dependencies": {
-    "date-fns": "*",
-    "date-format": "*",
-    "dateformat": "*",
-    "dayjs": "*",
-    "fecha": "*",
-    "formatoid": "*",
-    "lit-date": "*",
-    "luxon": "*",
-    "moment": "*",
-    "time-stamp": "*",
-    "tinydate": "*",
-    "tinytime": "*"
+    "date-fns": "^2.9.0",
+    "date-format": "^3.0.0",
+    "dateformat": "^3.0.3",
+    "dayjs": "^1.8.19",
+    "fecha": "^4.0.0",
+    "formatoid": "^1.2.3",
+    "lit-date": "^1.0.2",
+    "luxon": "^1.22.0",
+    "moment": "^2.24.0",
+    "time-stamp": "^2.2.0",
+    "tinydate": "^1.2.0",
+    "tinytime": "^0.2.6"
   },
   "devDependencies": {
     "benchmark": "^2.1.4",
-    "karma": "^4.3.0",
+    "karma": "^4.4.1",
     "karma-benchmark": "^1.0.4",
     "karma-benchmark-plotly-reporter": "^1.0.0",
     "karma-benchmarkjs-reporter": "^1.0.0",
     "karma-chrome-launcher": "^3.1.0",
-    "karma-firefox-launcher": "^1.2.0",
+    "karma-firefox-launcher": "^1.3.0",
     "karma-webpack": "^4.0.2",
     "package-size": "^2.3.0",
-    "webpack": "^4.40.2"
+    "webpack": "^4.41.5"
   }
 }
