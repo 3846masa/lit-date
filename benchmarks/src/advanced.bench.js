@@ -15,7 +15,7 @@ const dayOfWeekToName = ({ dayOfWeek }) => ['日', '月', '火', '水', '木', '
 Object.assign(dateformat.i18n, {
   dayNames: ['日', '月', '火', '水', '木', '金', '土'],
 });
-Object.assign(fecha.i18n, {
+fecha.setGlobalDateI18n({
   dayNamesShort: ['日', '月', '火', '水', '木', '金', '土'],
 });
 
