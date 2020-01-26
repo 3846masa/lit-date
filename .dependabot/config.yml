@@ -8,3 +8,11 @@ update_configs:
           dependency_type: all
           update_type: all
     version_requirement_updates: increase_versions
+  - package_manager: javascript
+    directory: /benchmarks
+    update_schedule: daily
+    automerged_updates:
+      - match:
+          dependency_type: all
+          update_type: in_range
+    version_requirement_updates: increase_versions
