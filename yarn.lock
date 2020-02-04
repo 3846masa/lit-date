@@ -2765,10 +2765,10 @@ rimraf@^3.0.0, rimraf@^3.0.1:
   dependencies:
     glob "^7.1.3"
 
-rollup-plugin-gzip@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-gzip/-/rollup-plugin-gzip-2.2.0.tgz#fd918f925bb5b82f7c80558aee8ff4f61f559814"
-  integrity sha512-3DFfB/0zGkvLMrZ3MnTU7L906u20dqepuxWJKXvnFZTji+IY8XwgA9iLvBX2H40C//fA3vWhNmtuPiFMfSzFgQ==
+rollup-plugin-gzip@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-gzip/-/rollup-plugin-gzip-2.3.0.tgz#501c5ace9406b84fca4c88e8a081bd21a81abcdb"
+  integrity sha512-88TOMhGSVrz0WMk7mIs49dZSR9wT7UOiJe9O2Dpwr1Wa8lcgL90sqCdKiPcGKewltKOBJSuoBFy9juPqpKsDkQ==
 
 rollup-plugin-node-resolve@^5.0.1:
   version "5.2.0"
