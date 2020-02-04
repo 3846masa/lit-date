@@ -9,7 +9,7 @@
     "date-fns": "^2.9.0",
     "date-format": "^3.0.0",
     "dateformat": "^3.0.3",
-    "dayjs": "^1.8.19",
+    "dayjs": "^1.8.20",
     "fecha": "^4.0.0",
     "formatoid": "^1.2.3",
     "lit-date": "^1.0.2",
