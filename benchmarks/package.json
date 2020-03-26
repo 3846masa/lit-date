@@ -13,7 +13,7 @@
     "fecha": "^4.2.0",
     "formatoid": "^1.2.3",
     "lit-date": "^1.0.2",
-    "luxon": "^1.22.0",
+    "luxon": "^1.22.2",
     "moment": "^2.24.0",
     "time-stamp": "^2.2.0",
     "tinydate": "^1.2.0",
