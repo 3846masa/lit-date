@@ -1607,10 +1607,10 @@ for-in@^1.0.2:
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
   integrity sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=
 
-formatoid@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/formatoid/-/formatoid-1.2.3.tgz#f9c1628fecbdfb56e422e5000cd2e81c1710589f"
-  integrity sha512-CkI0aK01nKhHoFZByDKw/yrNPy+g56DNIEmlq0Q67grdR/LLV8Orc9gsTGVP7XufM3bZg8iuD5UsVfkOdJo2yg==
+formatoid@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/formatoid/-/formatoid-1.2.4.tgz#924e5328566ad867a3c7658ec12f8b629fcbfe97"
+  integrity sha512-9wWHOPJvbIheSpiHGl0xaBwdszlzPaeh2KqHVexGQnKpO85xrMoKvuf6M3q0B4uC3I9lkXjH6+8ipQC8PQ/7Gw==
   dependencies:
     days "^1.0.1"
     fillo "^1.0.0"
