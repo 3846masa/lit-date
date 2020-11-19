@@ -8,7 +8,7 @@
   "dependencies": {
     "date-fns": "^2.16.1",
     "date-format": "^3.0.0",
-    "dateformat": "^3.0.3",
+    "dateformat": "^4.0.0",
     "dayjs": "^1.9.6",
     "fecha": "^4.2.0",
     "formatoid": "^1.2.4",
