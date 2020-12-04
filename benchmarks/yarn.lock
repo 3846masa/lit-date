@@ -1064,10 +1064,10 @@ date-format@^3.0.0:
   resolved "https://registry.yarnpkg.com/date-format/-/date-format-3.0.0.tgz#eb8780365c7d2b1511078fb491e6479780f3ad95"
   integrity sha512-eyTcpKOcamdhWJXj56DpQMo1ylSQpcGtGKXcU0Tb97+K56/CF5amAqqqNj0+KvA0iw2ynxtHWFsPDSClCxe48w==
 
-dateformat@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
-  integrity sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
+dateformat@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-4.2.2.tgz#319b64b4298d6bd4f918c41ccf3959bf04eae750"
+  integrity sha512-xuYrpI9DKHMDmbGOuxYnDl2kP+/ADeCjGV55uk8zDpPr19VyTla4QcOVZvI5RqU59376dMe0oqs1HkF9S+tyxw==
 
 dayjs@^1.9.6:
   version "1.9.6"
