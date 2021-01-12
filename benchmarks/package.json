@@ -29,6 +29,6 @@
     "karma-firefox-launcher": "^2.1.0",
     "karma-webpack": "^4.0.2",
     "package-size": "^2.3.0",
-    "webpack": "^4.45.0"
+    "webpack": "^4.46.0"
   }
 }
