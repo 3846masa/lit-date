@@ -6,7 +6,7 @@
     "bundlesize": "package-size --sort date-fns dateformat dayjs fecha luxon moment time-stamp lit-date tinytime tinydate formatoid date-format"
   },
   "dependencies": {
-    "date-fns": "^2.18.0",
+    "date-fns": "^2.19.0",
     "date-format": "^3.0.0",
     "dateformat": "^3.0.3",
     "dayjs": "^1.10.4",
