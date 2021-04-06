@@ -10,7 +10,7 @@
     "date-format": "^3.0.0",
     "dateformat": "^3.0.3",
     "dayjs": "^1.10.4",
-    "fecha": "^4.2.0",
+    "fecha": "^4.2.1",
     "formatoid": "^1.2.4",
     "lit-date": "^1.0.2",
     "luxon": "^1.26.0",
