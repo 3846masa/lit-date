@@ -1,8 +1,8 @@
 # ⏰ lit-date
 
-[![NPM](https://nodei.co/npm/lit-date.png?mini=true)](https://nodei.co/npm/lit-date/)
-![filesize](https://img.badgesize.io/https://unpkg.com/lit-date.svg?compression=gzip&style=flat-square)
-[![codecov](https://flat.badgen.net/codecov/c/github/3846masa/lit-date)](https://codecov.io/gh/3846masa/lit-date)
+[![NPM](https://img.shields.io/npm/v/lit-date?style=flat-square)](https://www.npmjs.com/package/lit-date)
+![filesize](https://img.shields.io/bundlephobia/minzip/lit-date?label=gzip&color=brightgreen&style=flat-square)
+[![codecov](https://img.shields.io/codecov/c/github/3846masa/lit-date?style=flat-square)](https://codecov.io/gh/3846masa/lit-date)
 
 > Light-weight, faster datetime formatter for modern browsers.
 
@@ -94,30 +94,30 @@ See [benchmarks](https://github.com/3846masa/lit-date/tree/master/benchmarks) fo
 | luxon        |       ![luxon_size] |       ![luxon_gzip] |
 | moment       |      ![moment_size] |      ![moment_gzip] |
 
-[time-stamp_size]: https://flat.badgen.net/bundlephobia/min/time-stamp?label=size
-[lit-date_size]: https://flat.badgen.net/bundlephobia/min/lit-date?label=size
-[dateformat_size]: https://flat.badgen.net/bundlephobia/min/dateformat?label=size
-[fecha_size]: https://flat.badgen.net/bundlephobia/min/fecha?label=size
-[dayjs_size]: https://flat.badgen.net/bundlephobia/min/dayjs?label=size
-[date-fns_size]: https://flat.badgen.net/bundlephobia/min/date-fns?label=size
-[moment_size]: https://flat.badgen.net/bundlephobia/min/moment?label=size
-[luxon_size]: https://flat.badgen.net/bundlephobia/min/luxon?label=size
-[tinytime_size]: https://flat.badgen.net/bundlephobia/min/tinytime?label=size
-[tinydate_size]: https://flat.badgen.net/bundlephobia/min/tinydate?label=size
-[date-format_size]: https://flat.badgen.net/bundlephobia/min/date-format?label=size
-[formatoid_size]: https://flat.badgen.net/bundlephobia/min/formatoid?label=size
-[time-stamp_gzip]: https://flat.badgen.net/bundlephobia/minzip/time-stamp?label=gzip&color=green
-[lit-date_gzip]: https://flat.badgen.net/bundlephobia/minzip/lit-date?label=gzip&color=green
-[dateformat_gzip]: https://flat.badgen.net/bundlephobia/minzip/dateformat?label=gzip&color=green
-[fecha_gzip]: https://flat.badgen.net/bundlephobia/minzip/fecha?label=gzip&color=green
-[dayjs_gzip]: https://flat.badgen.net/bundlephobia/minzip/dayjs?label=gzip&color=green
-[date-fns_gzip]: https://flat.badgen.net/bundlephobia/minzip/date-fns?label=gzip&color=green
-[moment_gzip]: https://flat.badgen.net/bundlephobia/minzip/moment?label=gzip&color=green
-[luxon_gzip]: https://flat.badgen.net/bundlephobia/minzip/luxon?label=gzip&color=green
-[tinytime_gzip]: https://flat.badgen.net/bundlephobia/minzip/tinytime?label=gzip&color=green
-[tinydate_gzip]: https://flat.badgen.net/bundlephobia/minzip/tinydate?label=gzip&color=green
-[date-format_gzip]: https://flat.badgen.net/bundlephobia/minzip/date-format?label=gzip&color=green
-[formatoid_gzip]: https://flat.badgen.net/bundlephobia/minzip/formatoid?label=gzip&color=green
+[time-stamp_size]: https://img.shields.io/bundlephobia/min/time-stamp?label=size&style=flat-square
+[lit-date_size]: https://img.shields.io/bundlephobia/min/lit-date?label=size&style=flat-square
+[dateformat_size]: https://img.shields.io/bundlephobia/min/dateformat?label=size&style=flat-square
+[fecha_size]: https://img.shields.io/bundlephobia/min/fecha?label=size&style=flat-square
+[dayjs_size]: https://img.shields.io/bundlephobia/min/dayjs?label=size&style=flat-square
+[date-fns_size]: https://img.shields.io/bundlephobia/min/date-fns?label=size&style=flat-square
+[moment_size]: https://img.shields.io/bundlephobia/min/moment?label=size&style=flat-square
+[luxon_size]: https://img.shields.io/bundlephobia/min/luxon?label=size&style=flat-square
+[tinytime_size]: https://img.shields.io/bundlephobia/min/tinytime?label=size&style=flat-square
+[tinydate_size]: https://img.shields.io/bundlephobia/min/tinydate?label=size&style=flat-square
+[date-format_size]: https://img.shields.io/bundlephobia/min/date-format?label=size&style=flat-square
+[formatoid_size]: https://img.shields.io/bundlephobia/min/formatoid?label=size&style=flat-square
+[time-stamp_gzip]: https://img.shields.io/bundlephobia/minzip/time-stamp?label=gzip&color=brightgreen&style=flat-square
+[lit-date_gzip]: https://img.shields.io/bundlephobia/minzip/lit-date?label=gzip&color=brightgreen&style=flat-square
+[dateformat_gzip]: https://img.shields.io/bundlephobia/minzip/dateformat?label=gzip&color=brightgreen&style=flat-square
+[fecha_gzip]: https://img.shields.io/bundlephobia/minzip/fecha?label=gzip&color=brightgreen&style=flat-square
+[dayjs_gzip]: https://img.shields.io/bundlephobia/minzip/dayjs?label=gzip&color=brightgreen&style=flat-square
+[date-fns_gzip]: https://img.shields.io/bundlephobia/minzip/date-fns?label=gzip&color=brightgreen&style=flat-square
+[moment_gzip]: https://img.shields.io/bundlephobia/minzip/moment?label=gzip&color=brightgreen&style=flat-square
+[luxon_gzip]: https://img.shields.io/bundlephobia/minzip/luxon?label=gzip&color=brightgreen&style=flat-square
+[tinytime_gzip]: https://img.shields.io/bundlephobia/minzip/tinytime?label=gzip&color=brightgreen&style=flat-square
+[tinydate_gzip]: https://img.shields.io/bundlephobia/minzip/tinydate?label=gzip&color=brightgreen&style=flat-square
+[date-format_gzip]: https://img.shields.io/bundlephobia/minzip/date-format?label=gzip&color=brightgreen&style=flat-square
+[formatoid_gzip]: https://img.shields.io/bundlephobia/minzip/formatoid?label=gzip&color=brightgreen&style=flat-square
 
 ## Contribute
 
