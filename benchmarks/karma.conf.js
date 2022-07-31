@@ -6,7 +6,10 @@ module.exports = (config) => {
     concurrency: 1,
     browsers: ['Firefox', 'Chrome'],
 
-    files: [{ pattern: 'src/*.bench.js', watched: false }, { pattern: 'src/**/*.bench.js', watched: false }],
+    files: [
+      { pattern: 'src/*.bench.js', watched: false },
+      { pattern: 'src/**/*.bench.js', watched: false },
+    ],
     preprocessors: {
       'src/*.bench.js': ['webpack'],
       'src/**/*.bench.js': ['webpack'],
@@ -15,6 +18,7 @@ module.exports = (config) => {
       externals: {
         benchmark: 'Benchmark',
       },
+      devtool: 'source-map',
     },
     webpackMiddleware: {
       stats: 'errors-only',
