@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+  codecov: codecov/codecov@3.2.3
 jobs:
   benchmark:
     docker:
@@ -38,7 +40,8 @@ jobs:
           key: v14-dependencies-{{ checksum "package.json" }}
       - restore_cache:
           key: v14-build-{{ .Environment.CIRCLE_SHA1 }}
-      - run: yarn test && yarn codecov
+      - run: yarn test
+      - codecov/upload
   deploy:
     docker:
       - image: circleci/node:14

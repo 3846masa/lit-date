@@ -16,7 +16,6 @@
     "build": "npm-run-all -p build:*",
     "build:rollup": "rollup -c",
     "clean": "rimraf lib",
-    "codecov": "bash <(curl -s https://codecov.io/bash)",
     "prepublish": "npm run build",
     "pretest": "npm run build",
     "test": "npm-run-all test:*",
