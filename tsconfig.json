@@ -1,53 +1,16 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "lib": ["esnext"],
-    // "allowJs": true,
-    // "checkJs": true,
-    // "jsx": "preserve",
-    "declaration": true,
-    "sourceMap": true,
-    // "outFile": "./",
-    "outDir": "./lib",
-    "rootDir": "./src",
-    "declarationDir": "./lib",
-    // "removeComments": true,
-    // "noEmit": true,
-    "importHelpers": true,
-    // "downlevelIteration": true,
-    // "isolatedModules": true,
-
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-
-    // "noUnusedLocals": true ,
-    // "noUnusedParameters": true ,
-    // "noImplicitReturns": true ,
-    // "noFallthroughCasesInSwitch": true ,
-
-    "moduleResolution": "node",
-    // "baseUrl": "./",
-    // "paths": {},
-    // "rootDirs": [],
-    // "typeRoots": [],
-    // "types": [],
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "esModuleInterop": true,
-    "preserveSymlinks": true
-
-    // "sourceRoot": "./",
-    // "mapRoot": "./",
-    // "inlineSourceMap": true,
-    // "inlineSources": true,
-
-    // "experimentalDecorators": true,
-    // "emitDecoratorMetadata": true,
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "node",
+    "paths": {
+      "lit-date": ["./src/index.ts"]
+    },
+    "sourceMap": true,
+    "target": "ESNext"
   },
-  "exclude": ["tests/**/*.ts"]
+  "extends": "@3846masa/configs/tsconfig.json",
+  "include": ["**/*", "**/.*"]
 }

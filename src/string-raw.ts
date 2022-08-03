@@ -1,7 +1,6 @@
-const isChrome =
-  // @ts-ignore
-  typeof navigator !== 'undefined' && /Chrom(?:e|ium)/.test(navigator.userAgent);
+const isChrome = typeof navigator !== 'undefined' && /Chrom(?:e|ium)/.test(navigator.userAgent);
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const loosePolyfill = (callSite: TemplateStringsArray, ...substitutions: any[]) => {
   let t = '';
   const raw = callSite.raw;

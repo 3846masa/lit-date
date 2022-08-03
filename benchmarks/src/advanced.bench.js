@@ -1,11 +1,12 @@
-import moment from 'moment';
+/* global suite, benchmark */
 import 'moment/locale/ja';
-import { DateTime } from 'luxon';
-import fecha from 'fecha';
-import { format as dateFnsFormat } from 'date-fns';
-import dateFnsLocaleJa from 'date-fns/locale/ja';
+
+import dateFnsLocaleJa, { format as dateFnsFormat } from 'date-fns';
 import dateformat, { i18n as dateformatI18n } from 'dateformat';
+import fecha from 'fecha';
 import litdate from 'lit-date';
+import { DateTime } from 'luxon';
+import moment from 'moment';
 
 const date = new Date('2000-01-06T12:34:56.789Z');
 const expected = '1月6日(木)';
