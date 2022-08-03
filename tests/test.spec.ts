@@ -1,4 +1,5 @@
 import test from 'ava';
+
 import fdate, { DateProxy } from '../src';
 
 test('year', (t) => {

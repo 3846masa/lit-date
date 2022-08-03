@@ -1,15 +1,16 @@
-import moment from 'moment';
-import { DateTime } from 'luxon';
-import fecha from 'fecha';
+/* global suite, benchmark */
 import { format as dateFnsFormat } from 'date-fns';
-import dayjs from 'dayjs';
-import dateformat from 'dateformat';
 import dateFormat2 from 'date-format';
-import timeStamp from 'time-stamp';
-import tinytime from 'tinytime';
-import tinydate from 'tinydate';
+import dateformat from 'dateformat';
+import dayjs from 'dayjs';
+import fecha from 'fecha';
 import formatoid from 'formatoid';
 import litdate from 'lit-date';
+import { DateTime } from 'luxon';
+import moment from 'moment';
+import timeStamp from 'time-stamp';
+import tinydate from 'tinydate';
+import tinytime from 'tinytime';
 
 const date = new Date('2000-01-06T12:34:56.789Z');
 const expected = '2000/01/06';

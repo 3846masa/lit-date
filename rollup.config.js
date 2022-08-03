@@ -1,5 +1,5 @@
-import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
+import typescript from 'rollup-plugin-typescript2';
 
 const licenseComment = `
 /*!
@@ -12,9 +12,9 @@ const licenseComment = `
 const defaultOpts = {
   input: './src/index.ts',
   output: {
+    banner: licenseComment,
     name: 'litdate',
     sourcemap: true,
-    banner: licenseComment,
   },
   plugins: [
     typescript(),

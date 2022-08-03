@@ -1,13 +1,22 @@
 {
   "name": "lit-date",
+  "version": "1.0.2",
   "description": "Light-weight, faster datetime formatter for modern browsers",
+  "keywords": [
+    "date",
+    "datetime",
+    "format",
+    "formatter"
+  ],
+  "repository": "git@github.com:3846masa/lit-date.git",
   "license": "MIT",
   "author": "3846masa <3846masahiro+git@gmail.com>",
-  "repository": "git@github.com:3846masa/lit-date.git",
-  "version": "1.0.2",
   "main": "lib/index.js",
+  "jsdelivr": "lib/index.umd.js",
+  "unpkg": "lib/index.umd.js",
   "module": "lib/index.mjs",
   "browser": "lib/index.umd.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
@@ -20,9 +29,48 @@
     "pretest": "npm run build",
     "test": "npm-run-all test:*",
     "test:ava": "nyc ava",
-    "test:size-limit": "size-limit"
+    "test:size-limit": "size-limit",
+    "lint": "npm-run-all lint:*",
+    "lint:eslint": "eslint --ext .js,.cjs,.mjs,.ts .",
+    "lint:tsc": "tsc --noEmit",
+    "lint:prettier": "prettier --check .",
+    "format": "npm-run-all format:*",
+    "format:eslint": "eslint --fix --ext .js,.cjs,.mjs,.ts .",
+    "format:prettier": "prettier --write ."
+  },
+  "ava": {
+    "environmentVariables": {
+      "TS_NODE_PROJECT": "tsconfig.test.json"
+    },
+    "extensions": [
+      "ts"
+    ],
+    "files": [
+      "tests/**/*.spec.ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "sourceMap": true
   },
   "devDependencies": {
+    "@3846masa/configs": "github:3846masa/configs",
     "@size-limit/file": "8.0.0",
     "ava": "4.3.1",
     "npm-run-all": "4.1.5",
@@ -35,50 +83,10 @@
     "ts-node": "10.9.1",
     "typescript": "4.7.4"
   },
-  "keywords": [
-    "date",
-    "datetime",
-    "format",
-    "formatter"
-  ],
-  "ava": {
-    "files": [
-      "tests/**/*.spec.ts"
-    ],
-    "environmentVariables": {
-      "TS_NODE_PROJECT": "tsconfig.test.json"
-    },
-    "extensions": [
-      "ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ]
-  },
   "size-limit": [
     {
       "path": "./lib/index.umd.js",
       "limit": "1 kB"
     }
-  ],
-  "jsdelivr": "lib/index.umd.js",
-  "nyc": {
-    "reporter": [
-      "lcov",
-      "html",
-      "text"
-    ],
-    "include": [
-      "src/**/*.ts"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "sourceMap": true
-  },
-  "types": "lib/index.d.ts",
-  "unpkg": "lib/index.umd.js"
+  ]
 }
