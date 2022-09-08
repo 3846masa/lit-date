@@ -252,10 +252,10 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@size-limit/file@8.0.1":
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-8.0.1.tgz#1b774a3bcc02586e822d8269914de3e8d54a43ed"
-  integrity sha512-kwgc5UJQIz5qbRow3atSiW2K7vEIIw4DelT4WLn09cOwcJgWs82Imgz2UqVivHJmCisn/ltPjT4qmxaDfjFflw==
+"@size-limit/file@8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@size-limit/file/-/file-8.1.0.tgz#c1624b3c891e4c5f08285b359e85253e1c96bc66"
+  integrity sha512-Ur+NgJSRHBnbQBrD8X2doxXYdBcVJsMxe2KfWrUmnZ6wYz09YKhQ1iYLqNztjf2yf/JEp00zp1vyhmimUQfUHQ==
   dependencies:
     semver "7.3.7"
 
