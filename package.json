@@ -23,7 +23,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "build": "npm-run-all -p build:*",
-    "build:rollup": "rollup -c",
+    "build:rollup": "rollup -c rollup.config.mjs",
     "clean": "rimraf lib",
     "prepublish": "npm run build",
     "pretest": "npm run build",
