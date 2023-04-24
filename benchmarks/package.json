@@ -25,7 +25,7 @@
     "karma-benchmark": "1.0.4",
     "karma-benchmark-plotly-reporter": "1.0.0",
     "karma-benchmarkjs-reporter": "1.0.0",
-    "karma-chrome-launcher": "3.1.1",
+    "karma-chrome-launcher": "3.2.0",
     "karma-firefox-launcher": "2.1.2",
     "karma-webpack": "5.0.0",
     "package-size": "2.3.0",
