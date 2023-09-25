@@ -5,6 +5,7 @@
     "esModuleInterop": true,
     "lib": ["DOM", "ESNext"],
     "moduleResolution": "node",
+    "noEmit": true,
     "paths": {
       "lit-date": ["./src/index.ts"]
     },
@@ -12,5 +13,5 @@
     "target": "ESNext"
   },
   "extends": "@3846masa/configs/tsconfig.json",
-  "include": ["**/*", "**/.*"]
+  "include": ["src/**/*"]
 }
