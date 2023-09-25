@@ -30,7 +30,7 @@ module.exports = (config) => {
       },
       showSuiteSummary: true,
     },
-    browsers: ['Firefox', 'Chrome'],
+    browsers: ['FirefoxHeadless', 'ChromeHeadless'],
 
     concurrency: 1,
     files: [
