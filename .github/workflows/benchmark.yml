@@ -1,0 +1,27 @@
+name: Benchmark
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 0 * * 0'
+defaults:
+  run:
+    shell: bash -euxo pipefail {0}
+jobs:
+  benchmark:
+    name: Benchmark
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
+      - name: Setup Node.js
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3.8.1
+        with:
+          node-version-file: ".node-version"
+          cache: "yarn"
+      - working-directory: ./benchmarks
+        run: yarn install --frozen-lockfile
+      - working-directory: ./benchmarks
+        env:
+          PLOTLY_USERNAME: ${{ secrets.PLOTLY_USERNAME }}
+          PLOTLY_APIKEY: ${{ secrets.PLOTLY_APIKEY }}
+        run: yarn benchmark
