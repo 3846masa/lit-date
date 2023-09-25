@@ -31,9 +31,9 @@
     "test:ava": "nyc ava",
     "test:size-limit": "size-limit",
     "lint": "npm-run-all lint:*",
-    "lint:eslint": "eslint --ext .js,.cjs,.mjs,.ts .",
+    "lint:eslint": "eslint --ext .js,.cjs,.mjs,.ts src/",
     "lint:tsc": "tsc --noEmit",
-    "lint:prettier": "prettier --check .",
+    "lint:prettier": "prettier --check src/",
     "format": "npm-run-all format:*",
     "format:eslint": "eslint --fix --ext .js,.cjs,.mjs,.ts .",
     "format:prettier": "prettier --write ."
