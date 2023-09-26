@@ -1,8 +1,12 @@
 /* global suite, benchmark */
 import 'moment/locale/ja';
+import 'dayjs/locale/ja';
 
-import dateFnsLocaleJa, { format as dateFnsFormat } from 'date-fns';
+import { cdate } from 'cdate';
+import { format as dateFnsFormat } from 'date-fns';
+import { ja as dateFnsLocaleJa } from 'date-fns/locale';
 import dateformat, { i18n as dateformatI18n } from 'dateformat';
+import dayjs from 'dayjs';
 import fecha from 'fecha';
 import litdate from 'lit-date';
 import { DateTime } from 'luxon';
@@ -19,30 +23,49 @@ Object.assign(dateformatI18n, {
 fecha.setGlobalDateI18n({
   dayNamesShort: ['日', '月', '火', '水', '木', '金', '土'],
 });
+const cdateJa = cdate()
+  .handler({
+    ddd: (dt) => ['日', '月', '火', '水', '木', '金', '土'][dt.getDay()] || '',
+  })
+  .cdateFn();
+
+function assert(actual, expected) {
+  if (actual !== expected) {
+    throw new Error(`${actual} !== ${expected}`);
+  }
+}
 
 suite('Advanced usage', () => {
   benchmark('moment', () => {
     const actual = moment(date).locale('ja').format('M月D日(ddd)');
-    console.assert(actual === expected);
+    assert(actual, expected);
   });
   benchmark('luxon', () => {
     const actual = DateTime.fromJSDate(date).setLocale('ja').toFormat('M月d日(ccc)');
-    console.assert(actual === expected);
+    assert(actual, expected);
   });
   benchmark('fecha', () => {
     const actual = fecha.format(date, 'M月D日(ddd)');
-    console.assert(actual === expected);
+    assert(actual, expected);
   });
   benchmark('date-fns', () => {
     const actual = dateFnsFormat(date, 'M月d日(eee)', { locale: dateFnsLocaleJa });
-    console.assert(actual === expected);
+    assert(actual, expected);
   });
   benchmark('dateformat', () => {
     const actual = dateformat(date, 'm月d日(ddd)');
-    console.assert(actual === expected);
+    assert(actual, expected);
+  });
+  benchmark('cdate', () => {
+    const actual = cdateJa(date).format('M月D日(ddd)');
+    assert(actual, expected);
+  });
+  benchmark('dayjs', () => {
+    const actual = dayjs(date).locale('ja').format('M月D日(ddd)');
+    assert(actual, expected);
   });
   benchmark('lit-date', () => {
     const actual = litdate`${'M'}月${'D'}日(${dayOfWeekToName})`(date);
-    console.assert(actual === expected);
+    assert(actual, expected);
   });
 });
