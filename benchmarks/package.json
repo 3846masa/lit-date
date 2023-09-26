@@ -3,9 +3,10 @@
   "private": true,
   "scripts": {
     "benchmark": "karma start",
-    "bundlesize": "package-size --sort date-fns dateformat dayjs fecha luxon moment time-stamp lit-date tinytime tinydate formatoid date-format"
+    "bundlesize": "NODE_OPTIONS='--openssl-legacy-provider' package-size date-fns dateformat dayjs fecha luxon moment time-stamp lit-date tinytime tinydate formatoid date-format cdate --sort"
   },
   "dependencies": {
+    "cdate": "0.0.7",
     "date-fns": "2.30.0",
     "date-format": "4.0.14",
     "dateformat": "5.0.3",
