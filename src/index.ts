@@ -7,7 +7,7 @@ type DateProxyFunction = (date: DateProxy) => unknown;
 
 const litdate =
   (strArr: TemplateStringsArray, ...args: (DateKeys | DateProxyFunction)[]) =>
-  (date: Date) => {
+  (date: Date | number) => {
     const proxy = new DateProxy(date);
     return stringRaw(strArr, ...args.map((argv) => (typeof argv === 'string' ? proxy[argv] : argv(proxy))));
   };

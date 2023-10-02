@@ -1,6 +1,7 @@
 import test from 'ava';
 
-import fdate, { DateProxy } from '../src';
+import type { DateProxy } from '../src';
+import fdate from '../src';
 
 test('year', (t) => {
   const date = new Date('2019-05-07T00:00:00.000');
@@ -98,19 +99,24 @@ test('milliSecond', (t) => {
   t.is(fdate`${'SSS'}`(date), '025');
 });
 
-test('TimeZone', (t) => {
-  const date = new Date();
-  date.getTimezoneOffset = () => -540;
-  t.is(fdate`${'Z'}`(date), '+09:00');
-  t.is(fdate`${'ZZ'}`(date), '+0900');
+test.serial('TimeZone', (t) => {
+  const getTimezoneOffset = Date.prototype.getTimezoneOffset;
+  try {
+    const date = new Date();
+    Date.prototype.getTimezoneOffset = () => -540;
+    t.is(fdate`${'Z'}`(date), '+09:00');
+    t.is(fdate`${'ZZ'}`(date), '+0900');
 
-  date.getTimezoneOffset = () => +660;
-  t.is(fdate`${'Z'}`(date), '-11:00');
-  t.is(fdate`${'ZZ'}`(date), '-1100');
+    Date.prototype.getTimezoneOffset = () => +660;
+    t.is(fdate`${'Z'}`(date), '-11:00');
+    t.is(fdate`${'ZZ'}`(date), '-1100');
 
-  date.getTimezoneOffset = () => 0;
-  t.is(fdate`${'Z'}`(date), 'Z');
-  t.is(fdate`${'ZZ'}`(date), 'Z');
+    Date.prototype.getTimezoneOffset = () => 0;
+    t.is(fdate`${'Z'}`(date), 'Z');
+    t.is(fdate`${'ZZ'}`(date), 'Z');
+  } finally {
+    Date.prototype.getTimezoneOffset = getTimezoneOffset;
+  }
 });
 
 test('i18n', (t) => {

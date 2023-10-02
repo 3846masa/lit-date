@@ -19,7 +19,14 @@ const defaultOpts = {
   plugins: [
     typescript(),
     terser({
-      output: { comments: /^!/ },
+      mangle: {
+        properties: {
+          regex: /^_/,
+        },
+      },
+      output: {
+        comments: /^!/,
+      },
     }),
   ],
 };

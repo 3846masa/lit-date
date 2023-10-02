@@ -1,10 +1,13 @@
 const pad = (num: number, count = 2) => `${num}`.padStart(count, '0');
 
 class DateProxy {
-  constructor(private date: Date) {}
+  private _date: Date;
+  constructor(date: Date | number) {
+    this._date = new Date(date);
+  }
   /** Month. */
   get month() {
-    return this.date.getMonth() + 1;
+    return this._date.getMonth() + 1;
   }
   /** Month. */
   get M() {
@@ -24,7 +27,7 @@ class DateProxy {
   }
   /** Day of month */
   get day() {
-    return this.date.getDate();
+    return this._date.getDate();
   }
   /** Day of month */
   get D() {
@@ -36,7 +39,7 @@ class DateProxy {
   }
   /** Day of week */
   get dayOfWeek() {
-    return this.date.getDay();
+    return this._date.getDay();
   }
   /** Day of week */
   get d() {
@@ -44,7 +47,7 @@ class DateProxy {
   }
   /** Year */
   get year() {
-    return this.date.getFullYear();
+    return this._date.getFullYear();
   }
   /** Year (2 degits) */
   get YY() {
@@ -64,7 +67,7 @@ class DateProxy {
   }
   /** Hour (0-23) */
   get hour() {
-    return this.date.getHours();
+    return this._date.getHours();
   }
   /** Hour (0-23) */
   get H() {
@@ -93,7 +96,7 @@ class DateProxy {
   }
   /** Minute */
   get minute() {
-    return this.date.getMinutes();
+    return this._date.getMinutes();
   }
   /** Minute */
   get m() {
@@ -105,7 +108,7 @@ class DateProxy {
   }
   /** Second */
   get second() {
-    return this.date.getSeconds();
+    return this._date.getSeconds();
   }
   /** Second */
   get s() {
@@ -117,7 +120,7 @@ class DateProxy {
   }
   /** Millisecond */
   get milliSecond() {
-    return this.date.getMilliseconds();
+    return this._date.getMilliseconds();
   }
   /** Padded Millisecond  (3 degits) */
   get SSS() {
@@ -125,7 +128,7 @@ class DateProxy {
   }
   /** Time Zone */
   get Z() {
-    const timezone = this.date.getTimezoneOffset();
+    const timezone = this._date.getTimezoneOffset();
     if (timezone === 0) {
       return 'Z';
     }
