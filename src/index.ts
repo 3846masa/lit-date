@@ -12,5 +12,5 @@ const litdate =
     return stringRaw(strArr, ...args.map((argv) => (typeof argv === 'string' ? proxy[argv] : argv(proxy))));
   };
 
-export { DateKeys, DateProxyFunction, DateProxyType as DateProxy };
+export type { DateKeys, DateProxyFunction, DateProxyType as DateProxy };
 export default litdate;
