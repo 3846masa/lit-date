@@ -1,3 +1,10 @@
 {
-  "extends": ["github>3846masa/configs//renovate/default"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>3846masa/configs//renovate/default"],
+  "packageRules": [
+    {
+      "matchFileNames": ["benchmarks/package.json"],
+      "semanticCommitType": "chore"
+    }
+  ]
 }
