@@ -13,7 +13,7 @@
     "dayjs": "1.11.10",
     "fecha": "4.2.3",
     "formatoid": "1.2.4",
-    "lit-date": "1.0.3",
+    "lit-date": "1.0.4",
     "luxon": "3.4.3",
     "moment": "2.29.4",
     "time-stamp": "2.2.0",
