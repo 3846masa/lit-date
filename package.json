@@ -70,7 +70,7 @@
     "sourceMap": true
   },
   "devDependencies": {
-    "@3846masa/configs": "github:3846masa/configs#767404089f8053b31c1bb479caab2fdf09a98f43",
+    "@3846masa/configs": "github:3846masa/configs#bc129ceaec50421edfd5182f9acf0949d3e7827d",
     "@size-limit/file": "9.0.0",
     "ava": "5.3.1",
     "npm-run-all": "4.1.5",
