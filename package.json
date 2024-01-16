@@ -41,7 +41,7 @@
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#2bb2326d925eade646df0d6614dc8f5f7a452729",
     "@jest/globals": "29.7.0",
-    "@size-limit/file": "9.0.0",
+    "@size-limit/file": "11.0.1",
     "jest": "29.7.0",
     "rimraf": "5.0.5",
     "rollup": "4.9.5",
