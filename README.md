@@ -49,11 +49,11 @@ const format = litdate`${'M'}月${'D'}日${dayOfWeek}曜日`;
 console.log(format(new Date()));
 ```
 
-See [examples](https://github.com/3846masa/lit-date/tree/master/examples).
+See [examples](https://github.com/3846masa/lit-date/tree/main/examples).
 
 ## Benchmark
 
-See [benchmarks](https://github.com/3846masa/lit-date/tree/master/benchmarks) for more details.
+See [benchmarks](https://github.com/3846masa/lit-date/tree/main/benchmarks) for more details.
 
 ### Basic usage
 
@@ -125,4 +125,4 @@ PRs accepted.
 
 ## License
 
-[MIT (c) 3846masa](https://github.com/3846masa/lit-date/blob/master/LICENSE)
+[MIT (c) 3846masa](https://github.com/3846masa/lit-date/blob/main/LICENSE)
