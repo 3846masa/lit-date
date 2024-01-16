@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "declaration": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
+    "declaration": true,
     "esModuleInterop": true,
     "lib": ["DOM", "ESNext"],
     "moduleResolution": "node",
