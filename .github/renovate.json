@@ -5,6 +5,10 @@
     {
       "matchFileNames": ["benchmarks/package.json"],
       "semanticCommitType": "chore"
+    },
+    {
+      "groupName": "size-limit",
+      "matchPackagePatterns": ["^size-limit$", "^@size-limit/"]
     }
   ]
 }
