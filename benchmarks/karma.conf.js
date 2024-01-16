@@ -40,7 +40,14 @@ module.exports = (config) => {
     frameworks: ['benchmark'],
     logLevel: config.LOG_ERROR,
 
-    plugins: ['karma-*'],
+    plugins: [
+      'karma-benchmark-plotly-reporter',
+      'karma-benchmark',
+      'karma-benchmarkjs-reporter',
+      'karma-chrome-launcher',
+      'karma-firefox-launcher',
+      'karma-webpack',
+    ],
     preprocessors: {
       'src/*.bench.js': ['webpack'],
       'src/**/*.bench.js': ['webpack'],

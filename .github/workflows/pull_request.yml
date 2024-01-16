@@ -15,26 +15,34 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - name: Setup pnpm
+        uses: pnpm/action-setup@d882d12c64e032187b2edb46d3a0d003b7a43598 # v2.4.0
+        with:
+          package_json_file: package.json
       - name: Setup Node.js
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
-          node-version-file: ".node-version"
-          cache: "yarn"
-      - run: yarn install --frozen-lockfile
-      - run: yarn lint
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install
+      - run: pnpm lint
   test:
     name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - name: Setup pnpm
+        uses: pnpm/action-setup@d882d12c64e032187b2edb46d3a0d003b7a43598 # v2.4.0
+        with:
+          package_json_file: package.json
       - name: Setup Node.js
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
-          node-version-file: ".node-version"
-          cache: "yarn"
-      - run: yarn install --frozen-lockfile
-      - run: yarn test
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install
+      - run: pnpm test
       - uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.4.1
   passed:
     name: All CI passed
@@ -64,15 +72,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - name: Setup pnpm
+        uses: pnpm/action-setup@d882d12c64e032187b2edb46d3a0d003b7a43598 # v2.4.0
+        with:
+          package_json_file: package.json
       - name: Setup Node.js
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
-          node-version-file: ".node-version"
-          cache: "yarn"
-      - run: yarn install --frozen-lockfile
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install
       - name: Release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-          npm publish
+          pnpm publish

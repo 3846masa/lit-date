@@ -2,8 +2,7 @@
   "name": "benchmarks",
   "private": true,
   "scripts": {
-    "benchmark": "karma start",
-    "bundlesize": "NODE_OPTIONS='--openssl-legacy-provider' package-size date-fns dateformat dayjs fecha luxon moment time-stamp lit-date tinytime tinydate formatoid date-format cdate --sort"
+    "benchmark": "karma start"
   },
   "dependencies": {
     "cdate": "0.0.7",
@@ -29,7 +28,6 @@
     "karma-chrome-launcher": "3.2.0",
     "karma-firefox-launcher": "2.1.2",
     "karma-webpack": "5.0.0",
-    "package-size": "2.3.0",
     "webpack": "5.89.0"
   }
 }
