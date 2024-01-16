@@ -43,7 +43,7 @@ jobs:
           cache: pnpm
       - run: pnpm install
       - run: pnpm test
-      - uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.4.1
+      - uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.1.4
   passed:
     name: All CI passed
     runs-on: ubuntu-latest
