@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@3846masa/configs':
-    specifier: github:3846masa/configs#b3015eeac0bb61aff3f7ae7e9aed700da922d63a
-    version: github.com/3846masa/configs/b3015eeac0bb61aff3f7ae7e9aed700da922d63a
+    specifier: github:3846masa/configs#99d377538ac87b6c5434c2e7806ab09e406b9e6c
+    version: github.com/3846masa/configs/99d377538ac87b6c5434c2e7806ab09e406b9e6c
   '@jest/globals':
     specifier: 29.7.0
     version: 29.7.0
@@ -4846,10 +4846,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/3846masa/configs/b3015eeac0bb61aff3f7ae7e9aed700da922d63a:
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/b3015eeac0bb61aff3f7ae7e9aed700da922d63a}
+  github.com/3846masa/configs/99d377538ac87b6c5434c2e7806ab09e406b9e6c:
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/99d377538ac87b6c5434c2e7806ab09e406b9e6c}
     name: '@3846masa/configs'
-    version: 1.0.296
+    version: 1.0.297
     dependencies:
       '@tsconfig/strictest': 2.0.2
       '@typescript-eslint/eslint-plugin': 6.19.0(@typescript-eslint/parser@6.19.0)(eslint@8.56.0)(typescript@5.3.3)
