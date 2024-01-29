@@ -69,10 +69,10 @@ devDependencies:
     version: 2.1.2
   karma-webpack:
     specifier: 5.0.0
-    version: 5.0.0(webpack@5.89.0)
+    version: 5.0.0(webpack@5.90.0)
   webpack:
-    specifier: 5.89.0
-    version: 5.89.0
+    specifier: 5.90.0
+    version: 5.90.0
 
 packages:
 
@@ -1038,7 +1038,7 @@ packages:
       which: 2.0.2
     dev: true
 
-  /karma-webpack@5.0.0(webpack@5.89.0):
+  /karma-webpack@5.0.0(webpack@5.90.0):
     resolution: {integrity: sha512-+54i/cd3/piZuP3dr54+NcFeKOPnys5QeM1IY+0SPASwrtHsliXUiCL50iW+K9WWA7RvamC4macvvQ86l3KtaA==}
     engines: {node: '>= 6'}
     peerDependencies:
@@ -1046,7 +1046,7 @@ packages:
     dependencies:
       glob: 7.2.3
       minimatch: 3.1.2
-      webpack: 5.89.0
+      webpack: 5.90.0
       webpack-merge: 4.2.2
     dev: true
 
@@ -1492,7 +1492,7 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /terser-webpack-plugin@5.3.10(webpack@5.89.0):
+  /terser-webpack-plugin@5.3.10(webpack@5.90.0):
     resolution: {integrity: sha512-BKFPWlPDndPs+NGGCr1U59t0XScL5317Y0UReNrHaw9/FwhPENlq6bfgs+4yPfyP51vqC1bQ4rp1EfXW5ZSH9w==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -1513,7 +1513,7 @@ packages:
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
       terser: 5.26.0
-      webpack: 5.89.0
+      webpack: 5.90.0
     dev: true
 
   /terser@5.26.0:
@@ -1637,8 +1637,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /webpack@5.89.0:
-    resolution: {integrity: sha512-qyfIC10pOr70V+jkmud8tMfajraGCZMBWJtrmuBymQKCrLTRejBI8STDp1MCyZu/QTdZSeacCQYpYNQVOzX5kw==}
+  /webpack@5.90.0:
+    resolution: {integrity: sha512-bdmyXRCXeeNIePv6R6tGPyy20aUobw4Zy8r0LUS2EWO+U+Ke/gYDgsCh7bl5rB6jPpr4r0SZa6dPxBxLooDT3w==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -1668,7 +1668,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(webpack@5.89.0)
+      terser-webpack-plugin: 5.3.10(webpack@5.90.0)
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
