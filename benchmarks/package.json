@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "benchmark": "2.1.4",
-    "karma": "6.4.2",
+    "karma": "6.4.3",
     "karma-benchmark": "1.0.4",
     "karma-benchmark-plotly-reporter": "1.0.0",
     "karma-benchmarkjs-reporter": "1.0.0",
