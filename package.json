@@ -41,13 +41,13 @@
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#0c4ec42215a06e051eea0517d43a4d4e6e017a96",
     "@jest/globals": "29.7.0",
-    "@size-limit/file": "11.0.3",
+    "@size-limit/file": "11.1.0",
     "jest": "29.7.0",
     "rimraf": "5.0.5",
     "rollup": "4.13.0",
     "rollup-plugin-terser": "7.0.2",
     "rollup-plugin-typescript2": "0.36.0",
-    "size-limit": "11.0.3",
+    "size-limit": "11.1.0",
     "ts-jest": "29.1.2",
     "ts-node": "10.9.2",
     "typescript": "5.4.2"
