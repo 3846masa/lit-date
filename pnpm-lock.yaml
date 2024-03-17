@@ -12,8 +12,8 @@ devDependencies:
     specifier: 29.7.0
     version: 29.7.0
   '@size-limit/file':
-    specifier: 11.0.3
-    version: 11.0.3(size-limit@11.0.3)
+    specifier: 11.1.0
+    version: 11.1.0(size-limit@11.1.0)
   jest:
     specifier: 29.7.0
     version: 29.7.0(@types/node@20.11.4)(ts-node@10.9.2)
@@ -30,8 +30,8 @@ devDependencies:
     specifier: 0.36.0
     version: 0.36.0(rollup@4.13.0)(typescript@5.4.2)
   size-limit:
-    specifier: 11.0.3
-    version: 11.0.3
+    specifier: 11.1.0
+    version: 11.1.0
   ts-jest:
     specifier: 29.1.2
     version: 29.1.2(@babel/core@7.23.7)(jest@29.7.0)(typescript@5.4.2)
@@ -1030,13 +1030,13 @@ packages:
       '@sinonjs/commons': 3.0.0
     dev: true
 
-  /@size-limit/file@11.0.3(size-limit@11.0.3):
-    resolution: {integrity: sha512-fuVZG+dZLLMaEi1siHHK5gU8Vfc4pvjZBxrefwZt9gOinbOgGONauEPZYipaE1tYTZPeJo8o9PuJ8Obbub+MLA==}
+  /@size-limit/file@11.1.0(size-limit@11.1.0):
+    resolution: {integrity: sha512-C7Tr9dvw8Jx8If2xyGt0OprB+t03tAf259QJYi4WSl3IRMxH7l8k9qyITa/KCFcmH7tVBduNRSnHAL8Cf90EfQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
-      size-limit: 11.0.3
+      size-limit: 11.1.0
     dependencies:
-      size-limit: 11.0.3
+      size-limit: 11.1.0
     dev: true
 
   /@tsconfig/node10@1.0.9:
@@ -3448,6 +3448,11 @@ packages:
       - ts-node
     dev: true
 
+  /jiti@1.21.0:
+    resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
+    hasBin: true
+    dev: true
+
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: true
@@ -4235,14 +4240,15 @@ packages:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: true
 
-  /size-limit@11.0.3:
-    resolution: {integrity: sha512-opXC+dOlwaKMyCx89WQq5J+LE+WdqtAFwaNwKNJv8xTCNMq6NIIY5LdayTRuRWWdsQM7hvI27afjtofN/m0gIw==}
+  /size-limit@11.1.0:
+    resolution: {integrity: sha512-HvqVEUDJ3y/XL69pR3vxTavPr6s4S9ScJhHjLEjpctF0Ymgo1StmHgFeQoyQYb/1ip7olkWxJG3wRcZk1hZcPg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     dependencies:
       bytes-iec: 3.1.1
       chokidar: 3.6.0
       globby: 14.0.1
+      jiti: 1.21.0
       lilconfig: 3.1.1
       nanospinner: 1.1.0
       picocolors: 1.0.0
