@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "cdate": "0.0.7",
-    "date-fns": "3.5.0",
+    "date-fns": "3.6.0",
     "date-format": "4.0.14",
     "dateformat": "5.0.3",
     "dayjs": "1.11.10",
