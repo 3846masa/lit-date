@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@3846masa/configs':
-    specifier: github:3846masa/configs#284c29b36e81c09a8e24e46d04eb042ca1777b17
-    version: github.com/3846masa/configs/284c29b36e81c09a8e24e46d04eb042ca1777b17
+    specifier: github:3846masa/configs#cee89b5a6234f8da719aa1d3fec7ae0410e3af7f
+    version: github.com/3846masa/configs/cee89b5a6234f8da719aa1d3fec7ae0410e3af7f
   '@jest/globals':
     specifier: 29.7.0
     version: 29.7.0
@@ -1055,8 +1055,8 @@ packages:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
     dev: true
 
-  /@tsconfig/strictest@2.0.3:
-    resolution: {integrity: sha512-MroLvRhMbqtXI5WBSwoomro6OQS4xnCoudUrMb20JO0vLKUs0bAaCEcvM/immEBSJjFAK1l6jW1oAO8q3Ancrg==}
+  /@tsconfig/strictest@2.0.4:
+    resolution: {integrity: sha512-/VKO/oufDOvAE48KGzZOEXFBKtR3PnGlb4cJoRtw3Ax5tYwaWnaNgyTJDviIbvjlnn82WMfTNvhegFkj5Xt2UA==}
     dev: true
 
   /@types/babel__core@7.20.5:
@@ -4852,12 +4852,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/3846masa/configs/284c29b36e81c09a8e24e46d04eb042ca1777b17:
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/284c29b36e81c09a8e24e46d04eb042ca1777b17}
+  github.com/3846masa/configs/cee89b5a6234f8da719aa1d3fec7ae0410e3af7f:
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/cee89b5a6234f8da719aa1d3fec7ae0410e3af7f}
     name: '@3846masa/configs'
-    version: 1.0.328
+    version: 1.0.329
     dependencies:
-      '@tsconfig/strictest': 2.0.3
+      '@tsconfig/strictest': 2.0.4
       '@typescript-eslint/eslint-plugin': 7.3.1(@typescript-eslint/parser@7.3.1)(eslint@8.57.0)(typescript@5.4.3)
       '@typescript-eslint/parser': 7.3.1(eslint@8.57.0)(typescript@5.4.3)
       better-typescript-lib: 2.6.0(typescript@5.4.3)
