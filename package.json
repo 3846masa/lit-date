@@ -39,7 +39,7 @@
     "test:size-limit": "size-limit"
   },
   "devDependencies": {
-    "@3846masa/configs": "github:3846masa/configs#4aa6788035f809456f8b28f996fbdf50d3b26349",
+    "@3846masa/configs": "github:3846masa/configs#8b4891aef05a8e2eaba8f74be622de17f8a40226",
     "@jest/globals": "29.7.0",
     "@size-limit/file": "11.1.2",
     "jest": "29.7.0",
