@@ -1,7 +1,11 @@
-import { expect, test } from '@jest/globals';
+import { afterEach, expect, jest, test } from '@jest/globals';
 
 import type { DateProxy } from '../';
 import fdate from '../';
+
+afterEach(() => {
+  jest.restoreAllMocks();
+});
 
 test('year', () => {
   const date = new Date('2019-05-07T00:00:00.000');
@@ -100,30 +104,25 @@ test('milliSecond', () => {
 });
 
 test('TimeZone', () => {
-  const getTimezoneOffset = Date.prototype.getTimezoneOffset;
-  try {
-    const date = new Date();
-    Date.prototype.getTimezoneOffset = () => -540;
-    expect(fdate`${'Z'}`(date)).toBe('+09:00');
-    expect(fdate`${'ZZ'}`(date)).toBe('+0900');
+  const date = new Date();
+  jest.spyOn(Date.prototype, 'getTimezoneOffset').mockReturnValue(-540);
+  expect(fdate`${'Z'}`(date)).toBe('+09:00');
+  expect(fdate`${'ZZ'}`(date)).toBe('+0900');
 
-    Date.prototype.getTimezoneOffset = () => +660;
-    expect(fdate`${'Z'}`(date)).toBe('-11:00');
-    expect(fdate`${'ZZ'}`(date)).toBe('-1100');
+  jest.spyOn(Date.prototype, 'getTimezoneOffset').mockReturnValue(+660);
+  expect(fdate`${'Z'}`(date)).toBe('-11:00');
+  expect(fdate`${'ZZ'}`(date)).toBe('-1100');
 
-    Date.prototype.getTimezoneOffset = () => 0;
-    expect(fdate`${'Z'}`(date)).toBe('Z');
-    expect(fdate`${'ZZ'}`(date)).toBe('Z');
-  } finally {
-    Date.prototype.getTimezoneOffset = getTimezoneOffset;
-  }
+  jest.spyOn(Date.prototype, 'getTimezoneOffset').mockReturnValue(0);
+  expect(fdate`${'Z'}`(date)).toBe('Z');
+  expect(fdate`${'ZZ'}`(date)).toBe('Z');
 });
 
 test('i18n', () => {
   const date = new Date('2019-02-25T00:00:00.000');
   const era = ({ year }: DateProxy) => {
     const eraYear = year - 1988;
-    return eraYear === 1 ? '平成元年' : `平成${year - 1988}`;
+    return eraYear === 1 ? '平成元年' : `平成${(year - 1988).toString(10)}`;
   };
   const dayOfWeek = ({ dayOfWeek }: DateProxy) => '日月火水木金土'[dayOfWeek];
   expect(fdate`${era}年${'M'}月${'D'}日（${dayOfWeek}）`(date)).toBe('平成31年2月25日（月）');
