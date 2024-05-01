@@ -13,6 +13,7 @@
     "sourceMap": true,
     "target": "ESNext"
   },
-  "extends": "@3846masa/configs/tsconfig.json",
-  "include": ["src/**/*"]
+  "exclude": ["lib/", "benchmarks/", "coverage/"],
+  "extends": "@3846masa/configs/typescript/tsconfig.json",
+  "include": ["**/*", "**/.*"]
 }

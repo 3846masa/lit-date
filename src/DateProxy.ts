@@ -1,4 +1,4 @@
-const pad = (num: number, count = 2) => `${num}`.padStart(count, '0');
+const pad = (num: number, count = 2) => num.toString(10).padStart(count, '0');
 
 class DateProxy {
   private _date: Date;
