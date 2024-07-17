@@ -39,7 +39,7 @@
     "test:size-limit": "size-limit"
   },
   "devDependencies": {
-    "@3846masa/configs": "github:3846masa/configs#6f2217cc5b2beb1ed6732ef56415445a5f030bfb",
+    "@3846masa/configs": "github:3846masa/configs#6088e06a63722f0b2f1bb1437cbeeb322dcc8ef5",
     "@jest/globals": "29.7.0",
     "@size-limit/file": "11.1.4",
     "@types/eslint": "8.56.10",
