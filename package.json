@@ -42,7 +42,7 @@
     "@3846masa/configs": "github:3846masa/configs#1680811faae257796efe99b055aee5072cac6577",
     "@jest/globals": "29.7.0",
     "@size-limit/file": "11.1.4",
-    "@types/eslint": "9.6.0",
+    "@types/eslint": "9.6.1",
     "jest": "29.7.0",
     "rimraf": "5.0.10",
     "rollup": "4.21.0",
