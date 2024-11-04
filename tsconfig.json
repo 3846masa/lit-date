@@ -2,7 +2,6 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "declaration": true,
     "esModuleInterop": true,
     "lib": ["DOM", "ESNext"],
     "moduleResolution": "node",
@@ -10,7 +9,6 @@
     "paths": {
       "lit-date": ["./src/index.ts"]
     },
-    "sourceMap": true,
     "target": "ESNext"
   },
   "exclude": ["lib/", "benchmarks/", "coverage/"],

@@ -1,5 +1,5 @@
-import { terser } from 'rollup-plugin-terser';
-import typescript from 'rollup-plugin-typescript2';
+import terser from '@rollup/plugin-terser';
+import typescript from '@rollup/plugin-typescript';
 
 const licenseComment = `
 /*!
@@ -17,7 +17,13 @@ const defaultOpts = {
     sourcemap: true,
   },
   plugins: [
-    typescript(),
+    typescript({
+      compilerOptions: {
+        declaration: true,
+        declarationDir: './lib',
+        sourceMap: true,
+      },
+    }),
     terser({
       mangle: {
         properties: {
