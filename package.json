@@ -42,7 +42,7 @@
     "@3846masa/configs": "github:3846masa/configs#afb5bf54089582dd48f8b4d7beb822f28bc3d3fb",
     "@jest/globals": "29.7.0",
     "@rollup/plugin-terser": "0.4.4",
-    "@rollup/plugin-typescript": "12.1.1",
+    "@rollup/plugin-typescript": "12.1.2",
     "@size-limit/file": "11.1.6",
     "@types/eslint": "9.6.1",
     "jest": "29.7.0",
