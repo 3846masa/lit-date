@@ -39,7 +39,7 @@
     "test:size-limit": "size-limit"
   },
   "devDependencies": {
-    "@3846masa/configs": "github:3846masa/configs#7b9745f8fdfd42aa29531ef8cc2264cdb1c2d006",
+    "@3846masa/configs": "github:3846masa/configs#c684177302bec10915414d8b5032e9131f84320e",
     "@jest/globals": "29.7.0",
     "@rollup/plugin-terser": "0.4.4",
     "@rollup/plugin-typescript": "12.1.2",
