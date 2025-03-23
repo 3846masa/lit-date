@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#4354529fb0f14d35e6cd943bf00a3dd442ec4d97
-        version: https://codeload.github.com/3846masa/configs/tar.gz/4354529fb0f14d35e6cd943bf00a3dd442ec4d97(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(jiti@2.4.2)
+        specifier: github:3846masa/configs#b5932d4d47a90946b560f130b204904ae605b9d4
+        version: https://codeload.github.com/3846masa/configs/tar.gz/b5932d4d47a90946b560f130b204904ae605b9d4(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(jiti@2.4.2)
       '@jest/globals':
         specifier: 29.7.0
         version: 29.7.0
@@ -50,9 +50,9 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/4354529fb0f14d35e6cd943bf00a3dd442ec4d97':
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/4354529fb0f14d35e6cd943bf00a3dd442ec4d97}
-    version: 1.0.613
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/b5932d4d47a90946b560f130b204904ae605b9d4':
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/b5932d4d47a90946b560f130b204904ae605b9d4}
+    version: 1.0.614
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -2630,7 +2630,7 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/4354529fb0f14d35e6cd943bf00a3dd442ec4d97(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(jiti@2.4.2)':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/b5932d4d47a90946b560f130b204904ae605b9d4(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(jiti@2.4.2)':
     dependencies:
       '@eslint/js': 9.22.0
       '@tsconfig/strictest': 2.0.5
@@ -2638,7 +2638,7 @@ snapshots:
       eslint: 9.22.0(jiti@2.4.2)
       eslint-config-prettier: 10.1.1(eslint@9.22.0(jiti@2.4.2))
       eslint-import-resolver-typescript: 3.9.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2)))(eslint@9.22.0(jiti@2.4.2))
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint-import-resolver-typescript@3.9.1)(eslint@9.22.0(jiti@2.4.2))
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint-import-resolver-typescript@3.9.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2)))(eslint@9.22.0(jiti@2.4.2)))(eslint@9.22.0(jiti@2.4.2))
       eslint-plugin-sort: 4.0.0(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)
       eslint-plugin-unicorn: 57.0.0(eslint@9.22.0(jiti@2.4.2))
       globals: 16.0.0
@@ -4015,7 +4015,7 @@ snapshots:
       stable-hash: 0.0.5
       tinyglobby: 0.2.12
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint-import-resolver-typescript@3.9.1)(eslint@9.22.0(jiti@2.4.2))
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint-import-resolver-typescript@3.9.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2)))(eslint@9.22.0(jiti@2.4.2)))(eslint@9.22.0(jiti@2.4.2))
     transitivePeerDependencies:
       - supports-color
 
@@ -4030,7 +4030,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint-import-resolver-typescript@3.9.1)(eslint@9.22.0(jiti@2.4.2)):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint-import-resolver-typescript@3.9.1(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2)))(eslint@9.22.0(jiti@2.4.2)))(eslint@9.22.0(jiti@2.4.2)):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
