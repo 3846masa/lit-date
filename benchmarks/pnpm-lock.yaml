@@ -30,8 +30,8 @@ dependencies:
     specifier: 1.0.4
     version: 1.0.4
   luxon:
-    specifier: 3.6.0
-    version: 3.6.0
+    specifier: 3.6.1
+    version: 3.6.1
   moment:
     specifier: 2.30.1
     version: 2.30.1
@@ -1128,8 +1128,8 @@ packages:
       - supports-color
     dev: true
 
-  /luxon@3.6.0:
-    resolution: {integrity: sha512-WE7p0p7W1xji9qxkLYsvcIxZyfP48GuFrWIBQZIsbjCyf65dG1rv4n83HcOyEyhvzxJCrUoObCRNFgRNIQ5KNA==}
+  /luxon@3.6.1:
+    resolution: {integrity: sha512-tJLxrKJhO2ukZ5z0gyjY1zPh3Rh88Ej9P7jNrZiHMUXHae1yvI2imgOZtL1TO8TW6biMMKfTtAOoEJANgtWBMQ==}
     engines: {node: '>=12'}
     dev: false
 
