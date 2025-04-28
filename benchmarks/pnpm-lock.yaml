@@ -69,10 +69,10 @@ devDependencies:
     version: 2.1.3
   karma-webpack:
     specifier: 5.0.1
-    version: 5.0.1(webpack@5.99.6)
+    version: 5.0.1(webpack@5.99.7)
   webpack:
-    specifier: 5.99.6
-    version: 5.99.6
+    specifier: 5.99.7
+    version: 5.99.7
 
 packages:
 
@@ -1050,7 +1050,7 @@ packages:
       which: 3.0.1
     dev: true
 
-  /karma-webpack@5.0.1(webpack@5.99.6):
+  /karma-webpack@5.0.1(webpack@5.99.7):
     resolution: {integrity: sha512-oo38O+P3W2mSPCSUrQdySSPv1LvPpXP+f+bBimNomS5sW+1V4SuhCuW8TfJzV+rDv921w2fDSDw0xJbPe6U+kQ==}
     engines: {node: '>= 18'}
     peerDependencies:
@@ -1058,7 +1058,7 @@ packages:
     dependencies:
       glob: 7.2.3
       minimatch: 9.0.3
-      webpack: 5.99.6
+      webpack: 5.99.7
       webpack-merge: 4.2.2
     dev: true
 
@@ -1365,8 +1365,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /schema-utils@4.3.0:
-    resolution: {integrity: sha512-Gf9qqc58SpCA/xdziiHz35F4GNIWYWZrEshUc/G/r5BnLph6xpKuLeoJoQuj5WfBIx/eQLf+hmVPYHaxJu7V2g==}
+  /schema-utils@4.3.2:
+    resolution: {integrity: sha512-Gn/JaSk/Mt9gYubxTtSn/QCV4em9mpAPiR1rqy/Ocu19u/G9J5WWdNoUT4SiV6mFC3y6cxyFcFwdzPM3FgxGAQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
       '@types/json-schema': 7.0.15
@@ -1513,7 +1513,7 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /terser-webpack-plugin@5.3.11(webpack@5.99.6):
+  /terser-webpack-plugin@5.3.11(webpack@5.99.7):
     resolution: {integrity: sha512-RVCsMfuD0+cTt3EwX8hSl2Ks56EbFHWmhluwcqoPKtBnfjiT6olaq7PRIRfhyU8nnC2MrnDrBLfrD/RGE+cVXQ==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -1531,10 +1531,10 @@ packages:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
-      schema-utils: 4.3.0
+      schema-utils: 4.3.2
       serialize-javascript: 6.0.2
       terser: 5.39.0
-      webpack: 5.99.6
+      webpack: 5.99.7
     dev: true
 
   /terser@5.39.0:
@@ -1652,8 +1652,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /webpack@5.99.6:
-    resolution: {integrity: sha512-TJOLrJ6oeccsGWPl7ujCYuc0pIq2cNsuD6GZDma8i5o5Npvcco/z+NKvZSFsP0/x6SShVb0+X2JK/JHUjKY9dQ==}
+  /webpack@5.99.7:
+    resolution: {integrity: sha512-CNqKBRMQjwcmKR0idID5va1qlhrqVUKpovi+Ec79ksW8ux7iS1+A6VqzfZXgVYCFRKl7XL5ap3ZoMpwBJxcg0w==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -1664,6 +1664,7 @@ packages:
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.6
+      '@types/json-schema': 7.0.15
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/wasm-edit': 1.14.1
       '@webassemblyjs/wasm-parser': 1.14.1
@@ -1680,9 +1681,9 @@ packages:
       loader-runner: 4.3.0
       mime-types: 2.1.35
       neo-async: 2.6.2
-      schema-utils: 4.3.0
+      schema-utils: 4.3.2
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.11(webpack@5.99.6)
+      terser-webpack-plugin: 5.3.11(webpack@5.99.7)
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
