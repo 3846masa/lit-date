@@ -3,7 +3,7 @@ const pad = (num: number, count = 2) => num.toString(10).padStart(count, '0');
 class DateProxy {
   private _date: Date;
   constructor(date: Date | number) {
-    this._date = new Date(date);
+    this._date = date instanceof Date ? date : new Date(date);
   }
   /** Month. */
   get month() {
