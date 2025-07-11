@@ -1,6 +1,6 @@
 {
   "name": "lit-date",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Light-weight, faster datetime formatter for modern browsers",
   "keywords": [
     "date",
