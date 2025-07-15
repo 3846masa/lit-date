@@ -27,8 +27,8 @@ dependencies:
     specifier: 1.2.5
     version: 1.2.5
   lit-date:
-    specifier: 1.0.4
-    version: 1.0.4
+    specifier: 1.0.5
+    version: 1.0.5
   luxon:
     specifier: 3.7.1
     version: 3.7.1
@@ -1107,8 +1107,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /lit-date@1.0.4:
-    resolution: {integrity: sha512-OsYVNNBtiwEmunPI9eYkgRMPi0L8R7qIfMo5f0eeX1DF4LngS1o0d+8/bm1hBD7nhev84sJ+i9/y8TxYFCXWmw==}
+  /lit-date@1.0.5:
+    resolution: {integrity: sha512-QXkQTrB2OyHmmNOneXA/eAlnViRxhAXnMlA2++Ob8wZeT3l6sxonXSqWV1M8mmrMeNC54GeiB8jGPg8i7gWKLQ==}
     dev: false
 
   /loader-runner@4.3.0:
