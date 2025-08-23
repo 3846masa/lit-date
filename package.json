@@ -53,7 +53,7 @@
     "ts-node": "10.9.2",
     "typescript": "5.9.2"
   },
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.15.0",
   "size-limit": [
     {
       "path": "./lib/index.umd.js",
