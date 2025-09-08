@@ -18,8 +18,8 @@ dependencies:
     specifier: 5.0.3
     version: 5.0.3
   dayjs:
-    specifier: 1.11.15
-    version: 1.11.15
+    specifier: 1.11.18
+    version: 1.11.18
   fecha:
     specifier: 4.2.3
     version: 4.2.3
@@ -558,8 +558,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
-  /dayjs@1.11.15:
-    resolution: {integrity: sha512-MC+DfnSWiM9APs7fpiurHGCoeIx0Gdl6QZBy+5lu8MbYKN5FZEXqOgrundfibdfhGZ15o9hzmZ2xJjZnbvgKXQ==}
+  /dayjs@1.11.18:
+    resolution: {integrity: sha512-zFBQ7WFRvVRhKcWoUh+ZA1g2HVgUbsZm9sbddh8EC5iv93sui8DVVz1Npvz+r6meo9VKfa8NyLWBsQK1VvIKPA==}
     dev: false
 
   /days@1.1.1:
