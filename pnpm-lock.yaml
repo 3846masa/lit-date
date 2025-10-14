@@ -39,8 +39,8 @@ importers:
         specifier: 11.2.0
         version: 11.2.0
       ts-jest:
-        specifier: 29.4.4
-        version: 29.4.4(@babel/core@7.28.3)(@jest/transform@30.2.0)(@jest/types@30.2.0)(babel-jest@30.2.0(@babel/core@7.28.3))(jest-util@30.2.0)(jest@30.2.0(@types/node@20.11.4)(ts-node@10.9.2(@types/node@20.11.4)(typescript@5.9.3)))(typescript@5.9.3)
+        specifier: 29.4.5
+        version: 29.4.5(@babel/core@7.28.3)(@jest/transform@30.2.0)(@jest/types@30.2.0)(babel-jest@30.2.0(@babel/core@7.28.3))(jest-util@30.2.0)(jest@30.2.0(@types/node@20.11.4)(ts-node@10.9.2(@types/node@20.11.4)(typescript@5.9.3)))(typescript@5.9.3)
       ts-node:
         specifier: 10.9.2
         version: 10.9.2(@types/node@20.11.4)(typescript@5.9.3)
@@ -2262,8 +2262,8 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
-  semver@7.7.2:
-    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
+  semver@7.7.3:
+    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -2444,8 +2444,8 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4'
 
-  ts-jest@29.4.4:
-    resolution: {integrity: sha512-ccVcRABct5ZELCT5U0+DZwkXMCcOCLi2doHRrKy1nK/s7J7bch6TzJMsrY09WxgUUIP/ITfmcDS8D2yl63rnXw==}
+  ts-jest@29.4.5:
+    resolution: {integrity: sha512-HO3GyiWn2qvTQA4kTgjDcXiMwYQt68a1Y8+JuLRVpdIzm+UOLSHgl/XqR4c6nzJkq5rOkjc02O2I7P7l/Yof0Q==}
     engines: {node: ^14.15.0 || ^16.10.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -3481,7 +3481,7 @@ snapshots:
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.4
-      semver: 7.7.2
+      semver: 7.7.3
       ts-api-utils: 2.0.1(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
@@ -4085,7 +4085,7 @@ snapshots:
       read-package-up: 11.0.0
       regexp-tree: 0.1.27
       regjsparser: 0.12.0
-      semver: 7.7.2
+      semver: 7.7.3
       strip-indent: 4.0.0
 
   eslint-scope@8.3.0:
@@ -4423,7 +4423,7 @@ snapshots:
 
   is-bun-module@2.0.0:
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
 
   is-callable@1.2.7: {}
 
@@ -4500,7 +4500,7 @@ snapshots:
       '@babel/parser': 7.28.3
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
-      semver: 7.7.2
+      semver: 7.7.3
     transitivePeerDependencies:
       - supports-color
 
@@ -4786,7 +4786,7 @@ snapshots:
       jest-message-util: 30.2.0
       jest-util: 30.2.0
       pretty-format: 30.2.0
-      semver: 7.7.2
+      semver: 7.7.3
       synckit: 0.11.11
     transitivePeerDependencies:
       - supports-color
@@ -4907,7 +4907,7 @@ snapshots:
 
   make-dir@4.0.0:
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
 
   make-error@1.3.6: {}
 
@@ -4959,7 +4959,7 @@ snapshots:
   normalize-package-data@6.0.2:
     dependencies:
       hosted-git-info: 7.0.2
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-license: 3.0.4
 
   normalize-path@3.0.0: {}
@@ -5214,7 +5214,7 @@ snapshots:
 
   semver@6.3.1: {}
 
-  semver@7.7.2: {}
+  semver@7.7.3: {}
 
   serialize-javascript@6.0.2:
     dependencies:
@@ -5274,7 +5274,7 @@ snapshots:
       get-stdin: 9.0.0
       git-hooks-list: 3.1.0
       is-plain-obj: 4.1.0
-      semver: 7.7.2
+      semver: 7.7.3
       sort-object-keys: 1.1.3
       tinyglobby: 0.2.12
 
@@ -5415,7 +5415,7 @@ snapshots:
     dependencies:
       typescript: 5.8.3
 
-  ts-jest@29.4.4(@babel/core@7.28.3)(@jest/transform@30.2.0)(@jest/types@30.2.0)(babel-jest@30.2.0(@babel/core@7.28.3))(jest-util@30.2.0)(jest@30.2.0(@types/node@20.11.4)(ts-node@10.9.2(@types/node@20.11.4)(typescript@5.9.3)))(typescript@5.9.3):
+  ts-jest@29.4.5(@babel/core@7.28.3)(@jest/transform@30.2.0)(@jest/types@30.2.0)(babel-jest@30.2.0(@babel/core@7.28.3))(jest-util@30.2.0)(jest@30.2.0(@types/node@20.11.4)(ts-node@10.9.2(@types/node@20.11.4)(typescript@5.9.3)))(typescript@5.9.3):
     dependencies:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
@@ -5424,7 +5424,7 @@ snapshots:
       json5: 2.2.3
       lodash.memoize: 4.1.2
       make-error: 1.3.6
-      semver: 7.7.2
+      semver: 7.7.3
       type-fest: 4.41.0
       typescript: 5.9.3
       yargs-parser: 21.1.1
