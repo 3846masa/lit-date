@@ -21,8 +21,8 @@ importers:
         specifier: 12.3.0
         version: 12.3.0(rollup@4.59.0)(tslib@2.6.2)(typescript@5.9.3)
       '@size-limit/file':
-        specifier: 12.0.0
-        version: 12.0.0(size-limit@12.0.0(jiti@2.4.2))
+        specifier: 12.0.1
+        version: 12.0.1(size-limit@12.0.1(jiti@2.4.2))
       '@types/eslint':
         specifier: 9.6.1
         version: 9.6.1
@@ -36,8 +36,8 @@ importers:
         specifier: 4.59.0
         version: 4.59.0
       size-limit:
-        specifier: 12.0.0
-        version: 12.0.0(jiti@2.4.2)
+        specifier: 12.0.1
+        version: 12.0.1(jiti@2.4.2)
       ts-jest:
         specifier: 29.4.6
         version: 29.4.6(@babel/core@7.28.3)(@jest/transform@30.2.0)(@jest/types@30.2.0)(babel-jest@30.2.0(@babel/core@7.28.3))(jest-util@30.2.0)(jest@30.2.0(@types/node@20.11.4)(ts-node@10.9.2(@types/node@20.11.4)(typescript@5.9.3)))(typescript@5.9.3)
@@ -704,11 +704,11 @@ packages:
   '@sinonjs/fake-timers@13.0.5':
     resolution: {integrity: sha512-36/hTbH2uaWuGVERyC6da9YwGWnzUZXuPro/F2LfsdOsLnCojz/iSH8MxUt/FD2S5XBSVPhmArFUXcpCQ2Hkiw==}
 
-  '@size-limit/file@12.0.0':
-    resolution: {integrity: sha512-OzKYpDzWJ2jo6cAIzVsaPuvzZTmMLDoVCViEvsctmImxpXzwJZcuBEpPohFKKdgVdZuNTU8WstmvywPq55Njdw==}
+  '@size-limit/file@12.0.1':
+    resolution: {integrity: sha512-Kvbnz46iV7WeHaANf1HmWjXBVMU2KkCU+0xJ78FzIjZwlVKKEqy+QCZprdBMfIWrzrvYeqP4cfuzKG8z6xVivg==}
     engines: {node: ^20.0.0 || ^22.0.0 || >=24.0.0}
     peerDependencies:
-      size-limit: 12.0.0
+      size-limit: 12.0.1
 
   '@tsconfig/node10@1.0.9':
     resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
@@ -2349,8 +2349,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  size-limit@12.0.0:
-    resolution: {integrity: sha512-JBG8dioIs0m2kHOhs9jD6E/tZKD08vmbf2bfqj/rJyNWqJxk/ZcakixjhYtsqdbi+AKVbfPkt3g2RRZiKaizYA==}
+  size-limit@12.0.1:
+    resolution: {integrity: sha512-vuFj+6lDOoBJQu6OLhcMQv7jnbXjuoEn4WsQHlSLOV/8EFfOka/tfjtLQ/rZig5Gagi3R0GnU/0kd4EY/y2etg==}
     engines: {node: ^20.0.0 || ^22.0.0 || >=24.0.0}
     hasBin: true
     peerDependencies:
@@ -3418,9 +3418,9 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
-  '@size-limit/file@12.0.0(size-limit@12.0.0(jiti@2.4.2))':
+  '@size-limit/file@12.0.1(size-limit@12.0.1(jiti@2.4.2))':
     dependencies:
-      size-limit: 12.0.0(jiti@2.4.2)
+      size-limit: 12.0.1(jiti@2.4.2)
 
   '@tsconfig/node10@1.0.9': {}
 
@@ -5334,7 +5334,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  size-limit@12.0.0(jiti@2.4.2):
+  size-limit@12.0.1(jiti@2.4.2):
     dependencies:
       bytes-iec: 3.1.1
       lilconfig: 3.1.3
