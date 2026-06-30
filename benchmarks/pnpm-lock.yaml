@@ -69,10 +69,10 @@ devDependencies:
     version: 2.1.3
   karma-webpack:
     specifier: 5.0.1
-    version: 5.0.1(webpack@5.108.0)
+    version: 5.0.1(webpack@5.108.1)
   webpack:
-    specifier: 5.108.0
-    version: 5.108.0
+    specifier: 5.108.1
+    version: 5.108.1
 
 packages:
 
@@ -1043,7 +1043,7 @@ packages:
       which: 3.0.1
     dev: true
 
-  /karma-webpack@5.0.1(webpack@5.108.0):
+  /karma-webpack@5.0.1(webpack@5.108.1):
     resolution: {integrity: sha512-oo38O+P3W2mSPCSUrQdySSPv1LvPpXP+f+bBimNomS5sW+1V4SuhCuW8TfJzV+rDv921w2fDSDw0xJbPe6U+kQ==}
     engines: {node: '>= 18'}
     peerDependencies:
@@ -1051,7 +1051,7 @@ packages:
     dependencies:
       glob: 7.2.3
       minimatch: 9.0.3
-      webpack: 5.108.0
+      webpack: 5.108.1
       webpack-merge: 4.2.2
     dev: true
 
@@ -1175,7 +1175,7 @@ packages:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: true
 
-  /minimizer-webpack-plugin@5.6.1(webpack@5.108.0):
+  /minimizer-webpack-plugin@5.6.1(webpack@5.108.1):
     resolution: {integrity: sha512-DoeAZz8Q1C1znwsUzej1fdoi4jCf7/+Em27ouLqfK/+3m8G+D7yDhUwrc3CNhjSzGUN1kn7Iv4sWmjflQHenpw==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -1222,7 +1222,7 @@ packages:
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.39.0
-      webpack: 5.108.0
+      webpack: 5.108.1
     dev: true
 
   /mkdirp@0.5.6:
@@ -1659,8 +1659,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /webpack@5.108.0:
-    resolution: {integrity: sha512-Ln1JuYGPRTXcHECapSFSvACtHmWEN5sQqFJeLLGQ0057S7qzT2eXUz0MZUedtmIrNy3nJgnITSubIYKGED9jSQ==}
+  /webpack@5.108.1:
+    resolution: {integrity: sha512-UUCihHQK3O7483Woa0SulNLDeAiOhHI2PN2PAPU4fVWJqbzhv04EJ8FaWtB9WWh3i8fRt28543U7VfuJTOrpgQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -1685,7 +1685,7 @@ packages:
       graceful-fs: 4.2.11
       loader-runner: 4.3.2
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.6.1(webpack@5.108.0)
+      minimizer-webpack-plugin: 5.6.1(webpack@5.108.1)
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
