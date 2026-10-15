@@ -15,8 +15,8 @@ dependencies:
     specifier: 4.0.14
     version: 4.0.14
   dateformat:
-    specifier: 5.0.3
-    version: 5.0.3
+    specifier: 5.0.4
+    version: 5.0.4
   dayjs:
     specifier: 1.11.23
     version: 1.11.23
@@ -536,8 +536,8 @@ packages:
     resolution: {integrity: sha512-39BOQLs9ZjKh0/patS9nrT8wc3ioX3/eA/zgbKNopnF2wCqJEoxywwwElATYvRsXdnOxA/OQeQoFZ3rFjVajhg==}
     engines: {node: '>=4.0'}
 
-  /dateformat@5.0.3:
-    resolution: {integrity: sha512-Kvr6HmPXUMerlLcLF+Pwq3K7apHpYmGDVqrxcDasBg86UcKeTSNWbEzU8bwdXnxnR44FtMhJAxI4Bov6Y/KUfA==}
+  /dateformat@5.0.4:
+    resolution: {integrity: sha512-DnMqBsxDYMXnJ1c6TY8AgalunEVV5LBm1INpkod2A60Ldw/bopC/MGH0bEoK0S+I66Juezz36snGuWrEp9FmNg==}
     engines: {node: '>=12.20'}
     dev: false
 
